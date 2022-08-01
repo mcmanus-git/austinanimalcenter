@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+.idea
+/eda_and_scratches
+
+.DS_Store
+
