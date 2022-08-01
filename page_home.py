@@ -23,9 +23,18 @@ pet_image_credit = html.A("  Photo: Silvana Carlos via Unsplash",
                           style={'fontSize': 10}
                           )
 
-header = html.H3('Austin Animal Center - Data Insights',
+header = html.H2('Austin Animal Center',
                  style={'textAlign': 'center'}
                  )
+
+explaination_paragrah = dcc.Markdown("""This dashboard was created with 
+[Plotly Dash Open Source](https://dash.plotly.com/) over the course of 2 weeks between July 17 - July 31, 2022 and is part
+ of Plotly's [Summer Community App Challenge](https://community.plotly.com/t/summer-community-app-challenge/65099). 
+You can find out more on the [About Page](/about).  Get familiar with some of the amazing work Austin Animal Center 
+has done below, check out the [Tools Page](/tools), and if you have a missing pet, check our [Missing Family Members
+Map](/lost) to help you locate your missing loved one.
+
+We plan to continue iterating, so have fun exploring and check back again soon!""")
 
 icon_card = dbc.Card(
     dbc.CardBody(
@@ -86,6 +95,7 @@ tabs = dbc.Tabs(
     ]
 )
 
+version = html.P("""Version: 0.1.0  |  All Data current through July 17, 2022""", style={'fontSize': 10})
 
 def create_page_home():
     layout = html.Div([
@@ -97,9 +107,10 @@ def create_page_home():
                 header,
                 html.Br(),
                 html.Br(),
+                explaination_paragrah,
                 # icon_card,
                 html.Br(),
-                tabs,
+                # tabs, # Could not complete in time for the Summer Challenge - Will complete afterward
                 html.Br(),
                 html.Br(),
                 dcc.Graph(figure=intake_animal_type_count_hbar),
@@ -110,6 +121,9 @@ def create_page_home():
                 html.Br(),
                 dcc.Graph(figure=outcomes_by_type),
                 html.Br(),
+                html.Br(),
+                html.Br(),
+                version,
             ], style={'margin': '5% 5% 5% 5%'}
         )
     ])

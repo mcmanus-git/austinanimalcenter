@@ -141,6 +141,9 @@ stay_prediction_output_div = html.Div(
     id='animal_stay_pred_output'
 )
 
+version = html.P("""Version: 0.1.0  |  All Data current through July 17, 2022""", style={'fontSize': 10})
+
+
 def create_page_tools():
     layout = html.Div(
         [
@@ -166,6 +169,10 @@ def create_page_tools():
                     line_break,
                     html.Br(),
                     animal_likely_outcome,
+                    html.Br(),
+                    html.Br(),
+                    html.Br(),
+                    version,
                     # More Children
                 ], style={'margin': '5% 10% 5% 10%'}
             )
@@ -201,8 +208,6 @@ def update_stay_pred(type, color, sex, status, condition, years_old, breed, inta
         multiple_intakes = True
     elif multiple_intakes == 'No':
         multiple_intakes = False
-    # if not all([type, color, sex, status, condition, years_old, breed, intake_type]):
-    #     pred_string = "Please enter all information about the incoming animal and then press Submit."
     if multiple_intakes != None and all([type, color, sex, status, condition, years_old, breed, intake_type]):
         pred_inputs = {'Animal Type': type, 'Breed': breed, 'Color': color, 'Date of Birth': dob,
                        'Multiple Intakes': multiple_intakes, 'DateTime': datetime.now(), 'transaction_age_years': years_old,
