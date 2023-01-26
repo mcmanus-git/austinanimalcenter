@@ -7,6 +7,8 @@ import folium
 from datetime import datetime
 
 sample_var = 'nothing'
+
+
 def aac_color(color_string):
     aac_color_dict = {'green': '#3AB02C',
                       'red': '#D23137',
@@ -129,6 +131,7 @@ def create_lost_animal_map():
     austin_map.save(f'data/assets/stray_map_{datetime.now().strftime("%m_%d_%Y")}.html')
 
     return austin_map
+
 
 def get_stray_map():
 

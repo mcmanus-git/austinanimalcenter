@@ -5,6 +5,8 @@ import json
 from datetime import datetime
 
 sample_var = 'nothing'
+
+
 def get_intake_outcomes_data():
     df = pd.read_pickle(f'data/full/aac_data_clean_2022_7_17.pkl')
     return df
@@ -33,21 +35,38 @@ def update_stray_data():
     return stray_df
 
 
+def cleanup_stray_data(file_list, current_file_name):
+    for file in file_list:
+        if 'aac_stray_' in file and file != current_file_name.split('/')[-1]:
+            os.remove(f'data/full/{file}')
+
+
 def get_stray_df():
 
+    current_filename = f'data/full/aac_stray_{datetime.now().strftime("%m_%d_%Y")}.pkl'
     files = os.listdir(f'data/full/')
-    if len(files) > 0:
-        for file in files:
-            if 'aac_stray_' in file:
-                file_name = file
-            else:
-                file_name = None
-    else:
-        file_name = None
 
-    if file_name and file_name[-14:-4] == f'{datetime.now().strftime("%m_%d_%Y")}':
-        stray_df = pd.read_pickle(f"data/full/{file_name}")
-    else:
-        stray_df = update_stray_data()
+    if len(files) > 0:
+        if current_filename in files:
+            stray_df = pd.read_pickle(f"data/full/{current_filename}")
+        else:
+            stray_df = update_stray_data()
+            cleanup_stray_data(files, current_filename)
+
+    # files = os.listdir(f'data/full/')
+    #
+    # if len(files) > 0:
+    #     for file in files:
+    #         if 'aac_stray_' in file:
+    #             file_name = file
+    #         else:
+    #             file_name = None
+    # else:
+    #     file_name = None
+    #
+    # if file_name and file_name[-14:-4] == f'{datetime.now().strftime("%m_%d_%Y")}':
+    #     stray_df = pd.read_pickle(f"data/full/{file_name}")
+    # else:
+    #     stray_df = update_stray_data()
 
     return stray_df
