@@ -35,10 +35,10 @@ def update_stray_data():
     return stray_df
 
 
-def cleanup_stray_data(file_list, current_file_name):
+def cleanup_stray_data(file_prefix, file_path,  file_list, current_file_name):
     for file in file_list:
-        if 'aac_stray_' in file and file != current_file_name.split('/')[-1]:
-            os.remove(f'data/full/{file}')
+        if file_prefix in file and file != current_file_name.split('/')[-1]:
+            os.remove(f'{file_path}{file}')
 
 
 def get_stray_df():
@@ -51,22 +51,6 @@ def get_stray_df():
             stray_df = pd.read_pickle(f"data/full/{current_filename}")
         else:
             stray_df = update_stray_data()
-            cleanup_stray_data(files, current_filename)
-
-    # files = os.listdir(f'data/full/')
-    #
-    # if len(files) > 0:
-    #     for file in files:
-    #         if 'aac_stray_' in file:
-    #             file_name = file
-    #         else:
-    #             file_name = None
-    # else:
-    #     file_name = None
-    #
-    # if file_name and file_name[-14:-4] == f'{datetime.now().strftime("%m_%d_%Y")}':
-    #     stray_df = pd.read_pickle(f"data/full/{file_name}")
-    # else:
-    #     stray_df = update_stray_data()
+            cleanup_stray_data('aac_stray_', 'data/full/', files, current_filename)
 
     return stray_df

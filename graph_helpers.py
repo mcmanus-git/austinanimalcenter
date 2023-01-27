@@ -2,7 +2,7 @@ import os
 import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
-from data_helpers import get_stray_df
+from data_helpers import get_stray_df, cleanup_stray_data
 import folium
 from datetime import datetime
 
@@ -135,21 +135,12 @@ def create_lost_animal_map():
 
 def get_stray_map():
 
-    files = os.listdir(f'data/full/')
-    if len(files) > 0:
-        for file in files:
-            if 'stray_map' in file:
-                file_name = file
-            else:
-                file_name = None
-    else:
-        file_name = None
-
-    if file_name and file_name[-15:-5] == f'{datetime.now().strftime("%m_%d_%Y")}':
-        stray_df = pd.read_pickle(f"data/full/{file_name}")
-    else:
-        stray_df = create_lost_animal_map()
-
     stray_map_string = f'data/assets/stray_map_{datetime.now().strftime("%m_%d_%Y")}.html'
+    files = os.listdir(f'data/assets/')
+
+    if len(files) > 0:
+        if stray_map_string not in files:
+            create_lost_animal_map()
+            cleanup_stray_data('stray_map_', 'data/assets/', files, stray_map_string)
 
     return stray_map_string
