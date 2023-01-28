@@ -1,9 +1,14 @@
+import dash
 from dash import html, dcc
-from navbar import create_navbar
 from graph_helpers import get_stray_map
 from datetime import datetime
-sample_var = 'nothing'
-nav = create_navbar()
+
+dash.register_page(
+    __name__,
+    name='Lost Animals',
+    top_nav=True,
+    path='/lost'
+)
 
 header = html.H3('Lost and Found Family Members', style={'textAlign': 'center'})
 explanation_paragraph = html.Div(
@@ -17,11 +22,10 @@ at 512-974-2000 and we'll help you reconnect with your loved one.""")
 )
 
 
-def create_page_lost_animals():
+def layout():
 
     layout = html.Div(
         [
-            nav,
             html.Div(
                 [
                     header,

@@ -1,8 +1,13 @@
+import dash
 from dash import html, dcc
 import dash_bootstrap_components as dbc
-from navbar import create_navbar
-sample_var = 'nothing'
-nav = create_navbar()
+
+dash.register_page(
+    __name__,
+    name='About',
+    top_nav=True,
+    path='/about'
+)
 
 header = html.H1('About', style={'textAlign': 'center'})
 line_break = html.Div([dcc.Markdown("""___""")], style={'margin': '5% 0% 5% 0%'})
@@ -65,22 +70,22 @@ contact_links = html.Div(
                 dbc.Col(
                     [
                         html.Div(dbc.NavLink([html.I(className="fab fa-github"), " GitHub"],
-                                    href="https://github.com/mcmanus-git",
-                                    target="_blank"))
+                                             href="https://github.com/mcmanus-git",
+                                             target="_blank"))
                     ], width={"size": 3, 'offset': 2}
                 ),
                 dbc.Col(
                     [
                         html.Div(dbc.NavLink([html.I(className="fab fa-medium"), " Medium"],
-                                    href="https://medium.com/@mcmanus_data_works",
-                                    target="_blank")),
+                                             href="https://medium.com/@mcmanus_data_works",
+                                             target="_blank")),
                     ], width={"size": 3}
                 ),
                 dbc.Col(
                     [
                         html.Div(dbc.NavLink([html.I(className="fab fa-linkedin"), " LinkedIn"],
-                                    href="https://www.linkedin.com/in/michael-mcmanus/",
-                                    target="_blank"))
+                                             href="https://www.linkedin.com/in/michael-mcmanus/",
+                                             target="_blank"))
                     ], width={"size": 3}
                 )
             ], justify="center"
@@ -89,10 +94,9 @@ contact_links = html.Div(
 )
 
 
-def create_page_about():
+def layout():
     layout = html.Div(
         [
-            nav,
             html.Div(
                 [
                     header,

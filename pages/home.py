@@ -1,11 +1,16 @@
-from dash import html, dcc
+import dash
+from dash import html, dcc, get_asset_url
 import dash_bootstrap_components as dbc
-from navbar import create_navbar
 from data_helpers import get_intake_outcomes_data
 from graph_helpers import *
-from app import app
-sample_var = 'nothing'
-nav = create_navbar()
+# from app import app
+
+dash.register_page(
+    __name__,
+    name='AAC Insights',
+    top_nav=True,
+    path='/'
+)
 
 # Data
 full_df = get_intake_outcomes_data()
@@ -16,7 +21,8 @@ intake_over_time = create_intake_over_time(full_df)
 outcomes_by_type = create_graph_outcomes(full_df, aac_color('blue'))
 
 # Images
-pet_image = html.Div(html.Img(src=app.get_asset_url('silvana-carlos-TPdR4J19SGQ-unsplash.jpg'), style={'width': '100%'}))
+# pet_image = html.Div(html.Img(src=app.get_asset_url('silvana-carlos-TPdR4J19SGQ-unsplash.jpg'), style={'width': '100%'}))
+pet_image = html.Div(html.Img(src=get_asset_url('silvana-carlos-TPdR4J19SGQ-unsplash.jpg'), style={'width': '100%'}))
 pet_image_credit = html.A("  Photo: Silvana Carlos via Unsplash",
                           href='https://unsplash.com/photos/TPdR4J19SGQ',
                           target="_blank",
@@ -97,9 +103,9 @@ tabs = dbc.Tabs(
 
 version = html.P("""Version: 0.1.0  |  All Data current through July 17, 2022""", style={'fontSize': 10})
 
-def create_page_home():
+
+def layout():
     layout = html.Div([
-        nav,
         pet_image,
         pet_image_credit,
         html.Div(
@@ -128,3 +134,4 @@ def create_page_home():
         )
     ])
     return layout
+

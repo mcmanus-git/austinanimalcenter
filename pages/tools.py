@@ -1,8 +1,6 @@
-from dash import html, dcc
-import dash_bootstrap_components as dbc
-from dash.dependencies import Input, Output, State
-from navbar import create_navbar
-from app import app
+import dash
+from dash import html, dcc, callback
+from dash.dependencies import Input, Output
 import pickle
 from dateutil.relativedelta import relativedelta
 from datetime import datetime, date
@@ -10,8 +8,13 @@ import pandas as pd
 import numpy as np
 from catboost import CatBoostRegressor
 
-sample_var = 'nothing'
-nav = create_navbar()
+dash.register_page(
+    __name__,
+    name='Tools',
+    top_nav=True,
+    path='/tools'
+)
+
 with open('regressor/model_inputs_dict.pkl', 'rb') as pkl:
     dropdown_vals_dict = pickle.load(pkl)
 
@@ -144,10 +147,9 @@ stay_prediction_output_div = html.Div(
 version = html.P("""Version: 0.1.0  |  All Data current through July 17, 2022""", style={'fontSize': 10})
 
 
-def create_page_tools():
+def layout():
     layout = html.Div(
         [
-            nav,
             html.Div(
                 [
                     header,
@@ -181,7 +183,7 @@ def create_page_tools():
     return layout
 
 
-@app.callback(
+@callback(
     Output('animal_stay_pred_output', 'children'),
     Input('animal_type_input', 'value'),
     Input('animal_color_input', 'value'),
@@ -222,7 +224,5 @@ def update_stay_pred(type, color, sex, status, condition, years_old, breed, inta
     elif not all([type, color, sex, status, condition, years_old, breed, intake_type, multiple_intakes]):
         pred_string = """Please enter all information about the incoming animal and a predicted lenght of care will be 
         provided."""
-
-
 
     return pred_string
