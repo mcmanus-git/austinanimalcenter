@@ -3,7 +3,7 @@ from dash import html, dcc, callback
 from dash.dependencies import Input, Output
 import pickle
 from dateutil.relativedelta import relativedelta
-from datetime import datetime, date
+from datetime import datetime
 import pandas as pd
 import numpy as np
 from catboost import CatBoostRegressor

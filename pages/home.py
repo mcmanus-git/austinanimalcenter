@@ -3,7 +3,6 @@ from dash import html, dcc, get_asset_url
 import dash_bootstrap_components as dbc
 from data_helpers import get_intake_outcomes_data
 from graph_helpers import *
-# from app import app
 
 dash.register_page(
     __name__,
@@ -21,7 +20,6 @@ intake_over_time = create_intake_over_time(full_df)
 outcomes_by_type = create_graph_outcomes(full_df, aac_color('blue'))
 
 # Images
-# pet_image = html.Div(html.Img(src=app.get_asset_url('silvana-carlos-TPdR4J19SGQ-unsplash.jpg'), style={'width': '100%'}))
 pet_image = html.Div(html.Img(src=get_asset_url('silvana-carlos-TPdR4J19SGQ-unsplash.jpg'), style={'width': '100%'}))
 pet_image_credit = html.A("  Photo: Silvana Carlos via Unsplash",
                           href='https://unsplash.com/photos/TPdR4J19SGQ',
@@ -134,4 +132,3 @@ def layout():
         )
     ])
     return layout
-

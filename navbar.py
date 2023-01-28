@@ -1,6 +1,6 @@
 import dash_bootstrap_components as dbc
 
-sample_var = 'nothing'
+
 def create_navbar():
     navbar = dbc.NavbarSimple(
         children=[
