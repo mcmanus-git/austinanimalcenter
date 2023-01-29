@@ -6,8 +6,6 @@ from data_helpers import get_stray_df, cleanup_stray_data
 import folium
 from datetime import datetime
 
-sample_var = 'nothing'
-
 
 def aac_color(color_string):
     aac_color_dict = {'green': '#3AB02C',

@@ -55,7 +55,12 @@ stay_calculator_inputs = html.Div(
                             id='animal_type_input',
                             placeholder='Animal Type',
                         )
-                    ], style={'display': 'inline-block', 'vertical-align': 'middle', 'margin': '1% 1% 1% 1%', 'width': '20%'}
+                    ], style={
+                        'display': 'inline-block',
+                        'vertical-align': 'middle',
+                        'margin': '1% 1% 1% 1%',
+                        'width': '20%'
+                    }
                 ),
                 html.Div( # Color
                     [
@@ -65,7 +70,12 @@ stay_calculator_inputs = html.Div(
                             placeholder='Color',
                             searchable=True
                         )
-                    ], style={'display': 'inline-block', 'vertical-align': 'middle', 'margin': '1% 1% 1% 1%', 'width': '20%'}
+                    ], style={
+                        'display': 'inline-block',
+                        'vertical-align': 'middle',
+                        'margin': '1% 1% 1% 1%',
+                        'width': '20%'
+                    }
                 ),
                 html.Div( # Sex
                     [
@@ -74,7 +84,12 @@ stay_calculator_inputs = html.Div(
                             id='animal_sex_input',
                             placeholder='Sex',
                         )
-                    ], style={'display': 'inline-block', 'vertical-align': 'middle', 'margin': '1% 1% 1% 1%', 'width': '20%'}
+                    ], style={
+                        'display': 'inline-block',
+                        'vertical-align': 'middle',
+                        'margin': '1% 1% 1% 1%',
+                        'width': '20%'
+                    }
                 ),
                 html.Div( # Reproductive Status
                     [
@@ -83,7 +98,12 @@ stay_calculator_inputs = html.Div(
                             id='animal_reproductive_status_input',
                             placeholder='Reproductive Status'
                         )
-                    ], style={'display': 'inline-block', 'vertical-align': 'middle', 'margin': '1% 1% 1% 1%', 'width': '25%'}
+                    ], style={
+                        'display': 'inline-block',
+                        'vertical-align': 'middle',
+                        'margin': '1% 1% 1% 1%',
+                        'width': '25%'
+                    }
                 ),
                 html.Div( # Intake Condition
                     [
@@ -92,7 +112,12 @@ stay_calculator_inputs = html.Div(
                             id='animal_intake_condition_input',
                             placeholder='Intake Condition'
                         )
-                    ], style={'display': 'inline-block', 'vertical-align': 'middle', 'margin': '1% 1% 1% 1%', 'width': '25%'}
+                    ], style={
+                        'display': 'inline-block',
+                        'vertical-align': 'middle',
+                        'margin': '1% 1% 1% 1%',
+                        'width': '25%'
+                    }
                 ),
                 html.Div( # Years Old
                     [
@@ -102,7 +127,12 @@ stay_calculator_inputs = html.Div(
                             placeholder='Years Old',
                             searchable=True,
                         ),
-                    ], style={'display': 'inline-block', 'vertical-align': 'middle', 'margin': '1% 1% 1% 1%', 'width': '20%'}
+                    ], style={
+                        'display': 'inline-block',
+                        'vertical-align': 'middle',
+                        'margin': '1% 1% 1% 1%',
+                        'width': '20%'
+                    }
                 ),
                 html.Div( # Breed
                     [
@@ -113,7 +143,12 @@ stay_calculator_inputs = html.Div(
                             searchable=True,
                             optionHeight=75
                         )
-                    ], style={'display': 'inline-block', 'vertical-align': 'middle', 'margin': '1% 1% 1% 1%', 'width': '20%'}
+                    ], style={
+                        'display': 'inline-block',
+                        'vertical-align': 'middle',
+                        'margin': '1% 1% 1% 1%',
+                        'width': '20%'
+                    }
                 ),
                 html.Div( # Intake Type
                     [
@@ -122,7 +157,12 @@ stay_calculator_inputs = html.Div(
                             id='animal_intake_type_input',
                             placeholder='Intake Type',
                         )
-                    ], style={'display': 'inline-block', 'vertical-align': 'middle', 'margin': '1% 1% 1% 1%', 'width': '20%'}
+                    ], style={
+                        'display': 'inline-block',
+                        'vertical-align': 'middle',
+                        'margin': '1% 1% 1% 1%',
+                        'width': '20%'
+                    }
                 ),
                 html.Div( # Multiple Intakes
                     [
@@ -131,10 +171,20 @@ stay_calculator_inputs = html.Div(
                             id='animal_multiple_intakes_input',
                             placeholder='Multiple Intakes',
                         )
-                    ], style={'display': 'inline-block', 'vertical-align': 'middle', 'margin': '1% 1% 1% 1%', 'width': '20%'}
+                    ], style={
+                        'display': 'inline-block',
+                        'vertical-align': 'middle',
+                        'margin': '1% 1% 1% 1%',
+                        'width': '20%'
+                    }
                 ),
                 # dcc.Dropdown
-            ], style={'display': 'inline-block', 'vertical-align': 'middle', 'margin': '0% 1% 0% 1%', 'width': '100%'}
+            ], style={
+                'display': 'inline-block',
+                'vertical-align': 'middle',
+                'margin': '0% 1% 0% 1%',
+                'width': '100%'
+            }
         )
     ]
 )
@@ -212,9 +262,9 @@ def update_stay_pred(type, color, sex, status, condition, years_old, breed, inta
         multiple_intakes = False
     if multiple_intakes != None and all([type, color, sex, status, condition, years_old, breed, intake_type]):
         pred_inputs = {'Animal Type': type, 'Breed': breed, 'Color': color, 'Date of Birth': dob,
-                       'Multiple Intakes': multiple_intakes, 'DateTime': datetime.now(), 'transaction_age_years': years_old,
-                       'Intake Type': intake_type, 'Intake Condition': condition, 'Reproductive Status': status,
-                       'Sex': sex, 'Age at Transaction': age_days,
+                       'Multiple Intakes': multiple_intakes, 'DateTime': datetime.now(),
+                       'transaction_age_years': years_old, 'Intake Type': intake_type, 'Intake Condition': condition,
+                       'Reproductive Status': status, 'Sex': sex, 'Age at Transaction': age_days,
                        }
 
         predicted_stay = reg.predict(pd.DataFrame(pred_inputs, index=[0]))
@@ -222,7 +272,7 @@ def update_stay_pred(type, color, sex, status, condition, years_old, breed, inta
         pred_string = f"Predicted Length of Care in Days: {int(np.ceil(predicted_stay[0]))}"
 
     elif not all([type, color, sex, status, condition, years_old, breed, intake_type, multiple_intakes]):
-        pred_string = """Please enter all information about the incoming animal and a predicted lenght of care will be 
+        pred_string = """Please enter all information about the incoming animal and a predicted length of care will be 
         provided."""
 
     return pred_string
