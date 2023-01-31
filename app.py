@@ -10,19 +10,21 @@ from navbar import create_navbar
 # https://dash-bootstrap-components.opensource.faculty.ai/docs/themes/
 
 navbar = create_navbar()
-FA47 = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
-FA43 = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css'
 FA512 = "https://use.fontawesome.com/releases/v6.2.1/css/all.css"
 
 app = dash.Dash(__name__,
                 suppress_callback_exceptions=True,
                 external_stylesheets=[dbc.themes.LUX,
-                                      # FA47,
-                                      # FA43,
                                       FA512,
                                       ],
                 title='AAC Insights',
                 use_pages=True,
+                meta_tags=[
+                    {
+                        "name": "viewport",
+                        "content": "width=device-width, initial-scale=1"
+                    }
+                ],
                 )
 
 
