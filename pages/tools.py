@@ -59,7 +59,7 @@ stay_calculator_inputs = html.Div(
                         'display': 'inline-block',
                         'vertical-align': 'middle',
                         'margin': '1% 1% 1% 1%',
-                        'width': '20%'
+                        'width': '75%'
                     }
                 ),
                 html.Div( # Color
@@ -74,7 +74,7 @@ stay_calculator_inputs = html.Div(
                         'display': 'inline-block',
                         'vertical-align': 'middle',
                         'margin': '1% 1% 1% 1%',
-                        'width': '20%'
+                        'width': '75%'
                     }
                 ),
                 html.Div( # Sex
@@ -88,7 +88,7 @@ stay_calculator_inputs = html.Div(
                         'display': 'inline-block',
                         'vertical-align': 'middle',
                         'margin': '1% 1% 1% 1%',
-                        'width': '20%'
+                        'width': '75%'
                     }
                 ),
                 html.Div( # Reproductive Status
@@ -102,7 +102,7 @@ stay_calculator_inputs = html.Div(
                         'display': 'inline-block',
                         'vertical-align': 'middle',
                         'margin': '1% 1% 1% 1%',
-                        'width': '25%'
+                        'width': '75%'
                     }
                 ),
                 html.Div( # Intake Condition
@@ -116,7 +116,7 @@ stay_calculator_inputs = html.Div(
                         'display': 'inline-block',
                         'vertical-align': 'middle',
                         'margin': '1% 1% 1% 1%',
-                        'width': '25%'
+                        'width': '75%'
                     }
                 ),
                 html.Div( # Years Old
@@ -131,7 +131,7 @@ stay_calculator_inputs = html.Div(
                         'display': 'inline-block',
                         'vertical-align': 'middle',
                         'margin': '1% 1% 1% 1%',
-                        'width': '20%'
+                        'width': '75%'
                     }
                 ),
                 html.Div( # Breed
@@ -147,7 +147,7 @@ stay_calculator_inputs = html.Div(
                         'display': 'inline-block',
                         'vertical-align': 'middle',
                         'margin': '1% 1% 1% 1%',
-                        'width': '20%'
+                        'width': '75%'
                     }
                 ),
                 html.Div( # Intake Type
@@ -161,7 +161,7 @@ stay_calculator_inputs = html.Div(
                         'display': 'inline-block',
                         'vertical-align': 'middle',
                         'margin': '1% 1% 1% 1%',
-                        'width': '20%'
+                        'width': '75%'
                     }
                 ),
                 html.Div( # Multiple Intakes
@@ -175,7 +175,7 @@ stay_calculator_inputs = html.Div(
                         'display': 'inline-block',
                         'vertical-align': 'middle',
                         'margin': '1% 1% 1% 1%',
-                        'width': '20%'
+                        'width': '75%'
                     }
                 ),
                 # dcc.Dropdown
