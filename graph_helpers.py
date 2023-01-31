@@ -33,7 +33,7 @@ def create_intake_animal_type_count_hbar(df, aac_color):
                  )
 
     fig.update_traces(marker_color=aac_color)
-    fig.update_layout(title_text=f'Number of Animals Given Shelter Since {earliest_year}', title_x=0.5)
+    fig.update_layout(title_text=f'Animals Given Shelter<br>Since {earliest_year}', title_x=0.5)
     return fig
 
 
