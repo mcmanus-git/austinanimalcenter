@@ -7,7 +7,13 @@ dash.register_page(
     __name__,
     name='AAC Insights',
     top_nav=True,
-    path='/'
+    path='/',
+    image='../assets/silvana-carlos-TPdR4J19SGQ-unsplash.jpg',
+    title="AAC Insights",
+    description="""
+    Machine Learning, Data Exploration, and Analytics Web Application showcasing that leveraging data supports Austin 
+    Animal Center's operational efficiency and increase animal adoption rates.
+    """,
 )
 
 # Data
