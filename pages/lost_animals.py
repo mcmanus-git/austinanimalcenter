@@ -6,7 +6,6 @@ from datetime import datetime
 dash.register_page(
     __name__,
     name='Lost Animals',
-    top_nav=True,
     path='/lost',
     title="Lost Animals",
     image='silvana-carlos-TPdR4J19SGQ-unsplash.jpg',

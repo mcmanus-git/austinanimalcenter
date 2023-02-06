@@ -11,7 +11,6 @@ from catboost import CatBoostRegressor
 dash.register_page(
     __name__,
     name='Tools',
-    top_nav=True,
     path='/tools',
     title="Tools",
     image='silvana-carlos-TPdR4J19SGQ-unsplash.jpg',

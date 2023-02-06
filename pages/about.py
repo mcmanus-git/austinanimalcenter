@@ -5,7 +5,6 @@ import dash_bootstrap_components as dbc
 dash.register_page(
     __name__,
     name='About',
-    top_nav=True,
     path='/about',
     title="About",
     image='silvana-carlos-TPdR4J19SGQ-unsplash.jpg',
