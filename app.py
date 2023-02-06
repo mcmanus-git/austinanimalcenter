@@ -20,7 +20,7 @@ Austin Animal Center's operational efficiency and increase animal
 adoption rates.
 """
 app_title = "Austin Animal Center Insights"
-app_image = 'https://unsplash.com/photos/TPdR4J19SGQ'
+app_image = 'https://images.unsplash.com/photo-1619326229465-1942c876e17c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
 
 metas = [
     {"name": "viewport", "content": "width=device-width, initial-scale=1"},
