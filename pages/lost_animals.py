@@ -7,7 +7,10 @@ dash.register_page(
     __name__,
     name='Lost Animals',
     top_nav=True,
-    path='/lost'
+    path='/lost',
+    title="Lost Animals",
+    image='silvana-carlos-TPdR4J19SGQ-unsplash.jpg',
+    description="AAC Insights - Lost animals map.",
 )
 
 header = html.H3('Lost and Found Family Members', style={'textAlign': 'center'})

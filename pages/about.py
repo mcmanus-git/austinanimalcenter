@@ -6,7 +6,10 @@ dash.register_page(
     __name__,
     name='About',
     top_nav=True,
-    path='/about'
+    path='/about',
+    title="About",
+    image='silvana-carlos-TPdR4J19SGQ-unsplash.jpg',
+    description="AAC Insights - About Page",
 )
 
 header = html.H1('About', style={'textAlign': 'center'})

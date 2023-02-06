@@ -12,7 +12,10 @@ dash.register_page(
     __name__,
     name='Tools',
     top_nav=True,
-    path='/tools'
+    path='/tools',
+    title="Tools",
+    image='silvana-carlos-TPdR4J19SGQ-unsplash.jpg',
+    description="AAC Insights - Tools Page",
 )
 
 with open('regressor/model_inputs_dict.pkl', 'rb') as pkl:
