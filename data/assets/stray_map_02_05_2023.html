@@ -1,0 +1,2505 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9ab32589b2a7aeeafc45502043b7a9fe {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9ab32589b2a7aeeafc45502043b7a9fe" ></div>
+        
+</body>
+<script>    
+    
+            var map_9ab32589b2a7aeeafc45502043b7a9fe = L.map(
+                "map_9ab32589b2a7aeeafc45502043b7a9fe",
+                {
+                    center: [30.2672, -97.7431],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4bc367132f8af7c9a6b13274c3119ea0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var marker_bf0592ec6bc14fc4275e86d20ddd48b6 = L.marker(
+                [30.32213, -97.67924],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_e65791ec29485c80e62072b1c5d82f53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bf0592ec6bc14fc4275e86d20ddd48b6.setIcon(icon_e65791ec29485c80e62072b1c5d82f53);
+        
+    
+        var popup_fc6be9721073cb4120cbc04dd8646e3e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f06d358e397cb0a5291e6df79d1fbd48 = $(`<div id="html_f06d358e397cb0a5291e6df79d1fbd48" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A790747&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_fc6be9721073cb4120cbc04dd8646e3e.setContent(html_f06d358e397cb0a5291e6df79d1fbd48);
+        
+
+        marker_bf0592ec6bc14fc4275e86d20ddd48b6.bindPopup(popup_fc6be9721073cb4120cbc04dd8646e3e)
+        ;
+
+        
+    
+    
+            marker_bf0592ec6bc14fc4275e86d20ddd48b6.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 11, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Fawn/White Intact Male American Bulldog Mix<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33dcc327abab37343f1bdf10107ec7af = L.marker(
+                [48.10897, -105.12307],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_b4ce6cdab261d03e3695f2ac01b7aad1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_33dcc327abab37343f1bdf10107ec7af.setIcon(icon_b4ce6cdab261d03e3695f2ac01b7aad1);
+        
+    
+        var popup_169214695d079dd608b770436d38e123 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_834f78fbbe98a916a056596fd494dc51 = $(`<div id="html_834f78fbbe98a916a056596fd494dc51" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870384&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_169214695d079dd608b770436d38e123.setContent(html_834f78fbbe98a916a056596fd494dc51);
+        
+
+        marker_33dcc327abab37343f1bdf10107ec7af.bindPopup(popup_169214695d079dd608b770436d38e123)
+        ;
+
+        
+    
+    
+            marker_33dcc327abab37343f1bdf10107ec7af.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Black Intact Female German Shepherd<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a488d0781070d1af50c68684220f61ca = L.marker(
+                [48.10897, -105.12307],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_f88548d6cf5f1ab39d5917755a030ddd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a488d0781070d1af50c68684220f61ca.setIcon(icon_f88548d6cf5f1ab39d5917755a030ddd);
+        
+    
+        var popup_806bca405b3141881bb082e63413f93a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ff4134c1ea042eadc79142d27cca96a = $(`<div id="html_1ff4134c1ea042eadc79142d27cca96a" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870389&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_806bca405b3141881bb082e63413f93a.setContent(html_1ff4134c1ea042eadc79142d27cca96a);
+        
+
+        marker_a488d0781070d1af50c68684220f61ca.bindPopup(popup_806bca405b3141881bb082e63413f93a)
+        ;
+
+        
+    
+    
+            marker_a488d0781070d1af50c68684220f61ca.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Black Unknown German Shepherd<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9dca44d9e8c783f0e568cb9e2e433964 = L.marker(
+                [30.48576, -97.55674],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_168f19a6664e5e166d0ba6708f2074bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9dca44d9e8c783f0e568cb9e2e433964.setIcon(icon_168f19a6664e5e166d0ba6708f2074bf);
+        
+    
+        var popup_adfd429a9919b6c834084d1fb42bd7ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ac3a531fb60b87cf5c528193531c215 = $(`<div id="html_7ac3a531fb60b87cf5c528193531c215" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870544&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_adfd429a9919b6c834084d1fb42bd7ae.setContent(html_7ac3a531fb60b87cf5c528193531c215);
+        
+
+        marker_9dca44d9e8c783f0e568cb9e2e433964.bindPopup(popup_adfd429a9919b6c834084d1fb42bd7ae)
+        ;
+
+        
+    
+    
+            marker_9dca44d9e8c783f0e568cb9e2e433964.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 08, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>White Intact Male Great Pyrenees Mix<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fbacbced2cec8cb54fdd59322c833415 = L.marker(
+                [30.26718, -97.69851],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_6d0e796abecbb0c9b5efc6186829a012 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fbacbced2cec8cb54fdd59322c833415.setIcon(icon_6d0e796abecbb0c9b5efc6186829a012);
+        
+    
+        var popup_e1f1160dcd5f32917b8b75d5e99143cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6f4646a6ea4f7ea185171a3b099c58c = $(`<div id="html_f6f4646a6ea4f7ea185171a3b099c58c" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870503&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_e1f1160dcd5f32917b8b75d5e99143cf.setContent(html_f6f4646a6ea4f7ea185171a3b099c58c);
+        
+
+        marker_fbacbced2cec8cb54fdd59322c833415.bindPopup(popup_e1f1160dcd5f32917b8b75d5e99143cf)
+        ;
+
+        
+    
+    
+            marker_fbacbced2cec8cb54fdd59322c833415.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Orange Tabby/White Intact Male Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be907f043ceaec16d9a98ecfffcb023a = L.marker(
+                [30.16148, -97.6909],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_28a1ad9e9c94e9378a1a2f6ce7658470 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_be907f043ceaec16d9a98ecfffcb023a.setIcon(icon_28a1ad9e9c94e9378a1a2f6ce7658470);
+        
+    
+        var popup_ab63de9f5c1ede3106a2d67c07bad4e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fcabf87e60594eb08c8949fe19e34cec = $(`<div id="html_fcabf87e60594eb08c8949fe19e34cec" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870420&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_ab63de9f5c1ede3106a2d67c07bad4e1.setContent(html_fcabf87e60594eb08c8949fe19e34cec);
+        
+
+        marker_be907f043ceaec16d9a98ecfffcb023a.bindPopup(popup_ab63de9f5c1ede3106a2d67c07bad4e1)
+        ;
+
+        
+    
+    
+            marker_be907f043ceaec16d9a98ecfffcb023a.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Orange Tabby/White Intact Male Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87420103e10c4b4c07f34cb7ef6d537a = L.marker(
+                [30.39447, -97.74832],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_2f5b17990afc3958d40fbb11096648a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_87420103e10c4b4c07f34cb7ef6d537a.setIcon(icon_2f5b17990afc3958d40fbb11096648a2);
+        
+    
+        var popup_597ee78ce7054e9a436130f3b774cd65 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7a3190e5d0d7b6382150258bf374369 = $(`<div id="html_f7a3190e5d0d7b6382150258bf374369" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870477&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_597ee78ce7054e9a436130f3b774cd65.setContent(html_f7a3190e5d0d7b6382150258bf374369);
+        
+
+        marker_87420103e10c4b4c07f34cb7ef6d537a.bindPopup(popup_597ee78ce7054e9a436130f3b774cd65)
+        ;
+
+        
+    
+    
+            marker_87420103e10c4b4c07f34cb7ef6d537a.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Orange/White Intact Male Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0ce016f382763549163c55d81bae209 = L.marker(
+                [30.21795, -97.51868],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_955bf1048730b4eb2c5dc6bcd61867e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b0ce016f382763549163c55d81bae209.setIcon(icon_955bf1048730b4eb2c5dc6bcd61867e1);
+        
+    
+        var popup_512948dc2655b068a6fa49af627a30cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eaefccdbe35998f69e3a370651ba5fce = $(`<div id="html_eaefccdbe35998f69e3a370651ba5fce" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870530&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_512948dc2655b068a6fa49af627a30cf.setContent(html_eaefccdbe35998f69e3a370651ba5fce);
+        
+
+        marker_b0ce016f382763549163c55d81bae209.bindPopup(popup_512948dc2655b068a6fa49af627a30cf)
+        ;
+
+        
+    
+    
+            marker_b0ce016f382763549163c55d81bae209.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 08, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Yellow Intact Female Labrador Retriever<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_463926345bddcb7accce4ca07489873a = L.marker(
+                [30.21461, -97.65756],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_319335144b90e43fab8d2c9be0efe313 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_463926345bddcb7accce4ca07489873a.setIcon(icon_319335144b90e43fab8d2c9be0efe313);
+        
+    
+        var popup_264b9753ecdbcd63e9a677f7d7fdbbb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef41590e8cbfff68febb6534193a227d = $(`<div id="html_ef41590e8cbfff68febb6534193a227d" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870405&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_264b9753ecdbcd63e9a677f7d7fdbbb8.setContent(html_ef41590e8cbfff68febb6534193a227d);
+        
+
+        marker_463926345bddcb7accce4ca07489873a.bindPopup(popup_264b9753ecdbcd63e9a677f7d7fdbbb8)
+        ;
+
+        
+    
+    
+            marker_463926345bddcb7accce4ca07489873a.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Brown Unknown Boxer Mix<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c09c64c5060c8ce21b40ca34a480c7e3 = L.marker(
+                [30.21461, -97.65756],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_b664990529c6e384c9f91bd40649769b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c09c64c5060c8ce21b40ca34a480c7e3.setIcon(icon_b664990529c6e384c9f91bd40649769b);
+        
+    
+        var popup_7bf85069d039513a8a42a2a8dcc8f492 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a7fe8b1b7bc0473bbb8f066f087e5ee = $(`<div id="html_7a7fe8b1b7bc0473bbb8f066f087e5ee" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870412&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_7bf85069d039513a8a42a2a8dcc8f492.setContent(html_7a7fe8b1b7bc0473bbb8f066f087e5ee);
+        
+
+        marker_c09c64c5060c8ce21b40ca34a480c7e3.bindPopup(popup_7bf85069d039513a8a42a2a8dcc8f492)
+        ;
+
+        
+    
+    
+            marker_c09c64c5060c8ce21b40ca34a480c7e3.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Brown Unknown Boxer Mix<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08d9f00a0ec81b75ddafdee3f388c57b = L.marker(
+                [30.41376, -97.65112],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_aa5b5b51baace138d68f1588a75d08f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_08d9f00a0ec81b75ddafdee3f388c57b.setIcon(icon_aa5b5b51baace138d68f1588a75d08f5);
+        
+    
+        var popup_8794a60b1cba983e143cb1d95e7e5560 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c494247398ca26a98fb7c4fa3569d663 = $(`<div id="html_c494247398ca26a98fb7c4fa3569d663" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870508&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_8794a60b1cba983e143cb1d95e7e5560.setContent(html_c494247398ca26a98fb7c4fa3569d663);
+        
+
+        marker_08d9f00a0ec81b75ddafdee3f388c57b.bindPopup(popup_8794a60b1cba983e143cb1d95e7e5560)
+        ;
+
+        
+    
+    
+            marker_08d9f00a0ec81b75ddafdee3f388c57b.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Brown Tabby/White Intact Female Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b06643d5a04f7caa34438d89582511e2 = L.marker(
+                [30.296834, -97.708058],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_fccf8f0e56becc6a281d86579c57c53d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b06643d5a04f7caa34438d89582511e2.setIcon(icon_fccf8f0e56becc6a281d86579c57c53d);
+        
+    
+        var popup_b0a980d49fadf20e9b548bb3c3471e70 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6fb275c29b5170ecb252e417d37ce19 = $(`<div id="html_f6fb275c29b5170ecb252e417d37ce19" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870547&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_b0a980d49fadf20e9b548bb3c3471e70.setContent(html_f6fb275c29b5170ecb252e417d37ce19);
+        
+
+        marker_b06643d5a04f7caa34438d89582511e2.bindPopup(popup_b0a980d49fadf20e9b548bb3c3471e70)
+        ;
+
+        
+    
+    
+            marker_b06643d5a04f7caa34438d89582511e2.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 08, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Black/Brown Intact Female Labrador Retriever<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9847fe12c51c3aa0e8e2a0697c5726b5 = L.marker(
+                [30.21579, -97.63654],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_ddbec463154c763be483c22b2d033cf0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9847fe12c51c3aa0e8e2a0697c5726b5.setIcon(icon_ddbec463154c763be483c22b2d033cf0);
+        
+    
+        var popup_228a02fddda0741d485626c870dac033 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a65969a1c3a44339b53e0040a1c5c0e = $(`<div id="html_5a65969a1c3a44339b53e0040a1c5c0e" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870678&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_228a02fddda0741d485626c870dac033.setContent(html_5a65969a1c3a44339b53e0040a1c5c0e);
+        
+
+        marker_9847fe12c51c3aa0e8e2a0697c5726b5.bindPopup(popup_228a02fddda0741d485626c870dac033)
+        ;
+
+        
+    
+    
+            marker_9847fe12c51c3aa0e8e2a0697c5726b5.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 10, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Brown Intact Female Chihuahua Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8115ecbd074976210e267abf09178567 = L.marker(
+                [30.35966, -97.7163],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_90f6d1180016c0d81ff4e61e5c601e58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8115ecbd074976210e267abf09178567.setIcon(icon_90f6d1180016c0d81ff4e61e5c601e58);
+        
+    
+        var popup_4a45d50f7a8ebac29c3f4e7a6e4a4974 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5588f6c252610e23acd511e81a409aa1 = $(`<div id="html_5588f6c252610e23acd511e81a409aa1" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870454&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_4a45d50f7a8ebac29c3f4e7a6e4a4974.setContent(html_5588f6c252610e23acd511e81a409aa1);
+        
+
+        marker_8115ecbd074976210e267abf09178567.bindPopup(popup_4a45d50f7a8ebac29c3f4e7a6e4a4974)
+        ;
+
+        
+    
+    
+            marker_8115ecbd074976210e267abf09178567.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Blue/White Intact Female Domestic Longhair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1df6932f42ea1bb22b7f192366a74bd = L.marker(
+                [30.25739, -97.72243],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_5e91eaabda7f311634884943d33cf1ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f1df6932f42ea1bb22b7f192366a74bd.setIcon(icon_5e91eaabda7f311634884943d33cf1ca);
+        
+    
+        var popup_cddf7ae5b922bfb50916b067b80f7047 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3dcda5a576de5f1677b2f3c68a680643 = $(`<div id="html_3dcda5a576de5f1677b2f3c68a680643" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870702&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_cddf7ae5b922bfb50916b067b80f7047.setContent(html_3dcda5a576de5f1677b2f3c68a680643);
+        
+
+        marker_f1df6932f42ea1bb22b7f192366a74bd.bindPopup(popup_cddf7ae5b922bfb50916b067b80f7047)
+        ;
+
+        
+    
+    
+            marker_f1df6932f42ea1bb22b7f192366a74bd.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 11, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Orange Tabby/White Intact Male Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c304fa77e53709b55ee9f73077d066d = L.marker(
+                [31.43465, -94.83619],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_14de8a0ec824fa3718ae8c95cc476107 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2c304fa77e53709b55ee9f73077d066d.setIcon(icon_14de8a0ec824fa3718ae8c95cc476107);
+        
+    
+        var popup_c95b5b8fae15e0fd9434c78290f19097 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96e30567197780963b264fbe8a9400e8 = $(`<div id="html_96e30567197780963b264fbe8a9400e8" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870741&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_c95b5b8fae15e0fd9434c78290f19097.setContent(html_96e30567197780963b264fbe8a9400e8);
+        
+
+        marker_2c304fa77e53709b55ee9f73077d066d.bindPopup(popup_c95b5b8fae15e0fd9434c78290f19097)
+        ;
+
+        
+    
+    
+            marker_2c304fa77e53709b55ee9f73077d066d.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 12, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>White Intact Female Domestic Shorthair Mix<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5a39b33b6dd03e586a536c77d1fe355 = L.marker(
+                [48.10897, -105.12307],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_e3e4931a90e034e607ed8520706c6e45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a5a39b33b6dd03e586a536c77d1fe355.setIcon(icon_e3e4931a90e034e607ed8520706c6e45);
+        
+    
+        var popup_ab292bd2ad3331167daed70b81b04d26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fea45c5b00bfac3a67f15cfbf0b986aa = $(`<div id="html_fea45c5b00bfac3a67f15cfbf0b986aa" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870385&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_ab292bd2ad3331167daed70b81b04d26.setContent(html_fea45c5b00bfac3a67f15cfbf0b986aa);
+        
+
+        marker_a5a39b33b6dd03e586a536c77d1fe355.bindPopup(popup_ab292bd2ad3331167daed70b81b04d26)
+        ;
+
+        
+    
+    
+            marker_a5a39b33b6dd03e586a536c77d1fe355.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Brown/Black Unknown German Shepherd<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d19e3cd311871d7f1f22f89a5d5975e = L.marker(
+                [30.25848, -97.70011],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_09e1dfeeefe720bba9a6e2519c18571f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2d19e3cd311871d7f1f22f89a5d5975e.setIcon(icon_09e1dfeeefe720bba9a6e2519c18571f);
+        
+    
+        var popup_a93da39cc5a86a3cc63031f17b8ebc08 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80c86807c427c664d82fa6ce79bc1133 = $(`<div id="html_80c86807c427c664d82fa6ce79bc1133" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870595&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_a93da39cc5a86a3cc63031f17b8ebc08.setContent(html_80c86807c427c664d82fa6ce79bc1133);
+        
+
+        marker_2d19e3cd311871d7f1f22f89a5d5975e.bindPopup(popup_a93da39cc5a86a3cc63031f17b8ebc08)
+        ;
+
+        
+    
+    
+            marker_2d19e3cd311871d7f1f22f89a5d5975e.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 08, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Brown Brindle/White Intact Female Pit Bull Mix<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a01b96f59295b359e8dc86e4879ef23c = L.marker(
+                [30.26795, -97.75836],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_b00c613ecb02df66d6f318ff0c17e36d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a01b96f59295b359e8dc86e4879ef23c.setIcon(icon_b00c613ecb02df66d6f318ff0c17e36d);
+        
+    
+        var popup_d285d8d67d84cd7eca24f8e286224f79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f957c6ff0bd44779e99b6a43930fe03 = $(`<div id="html_5f957c6ff0bd44779e99b6a43930fe03" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870714&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_d285d8d67d84cd7eca24f8e286224f79.setContent(html_5f957c6ff0bd44779e99b6a43930fe03);
+        
+
+        marker_a01b96f59295b359e8dc86e4879ef23c.bindPopup(popup_d285d8d67d84cd7eca24f8e286224f79)
+        ;
+
+        
+    
+    
+            marker_a01b96f59295b359e8dc86e4879ef23c.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 11, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Tan/White Intact Male Pit Bull<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_85937b4b69f44a89506ee5e6b3c0a514 = L.marker(
+                [30.26571, -97.73346],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_d3e0688404d6dcf83dbf255adb670fba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_85937b4b69f44a89506ee5e6b3c0a514.setIcon(icon_d3e0688404d6dcf83dbf255adb670fba);
+        
+    
+        var popup_0ec8180b084e42b7b8790e90c1944b07 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9df0a14011cc9d7ce3feae438c141b2 = $(`<div id="html_c9df0a14011cc9d7ce3feae438c141b2" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870440&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_0ec8180b084e42b7b8790e90c1944b07.setContent(html_c9df0a14011cc9d7ce3feae438c141b2);
+        
+
+        marker_85937b4b69f44a89506ee5e6b3c0a514.bindPopup(popup_0ec8180b084e42b7b8790e90c1944b07)
+        ;
+
+        
+    
+    
+            marker_85937b4b69f44a89506ee5e6b3c0a514.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Orange Tabby Intact Male Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8dfab225abaf509d4b76a8ead938ca7c = L.marker(
+                [30.35192, -97.74744],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_a69bec6937433666ff6148e667e9ab6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8dfab225abaf509d4b76a8ead938ca7c.setIcon(icon_a69bec6937433666ff6148e667e9ab6a);
+        
+    
+        var popup_fda690001d7cfb7a3ccf32a4e1bd0074 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74390eff247d439311f4326c6212bd78 = $(`<div id="html_74390eff247d439311f4326c6212bd78" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870478&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_fda690001d7cfb7a3ccf32a4e1bd0074.setContent(html_74390eff247d439311f4326c6212bd78);
+        
+
+        marker_8dfab225abaf509d4b76a8ead938ca7c.bindPopup(popup_fda690001d7cfb7a3ccf32a4e1bd0074)
+        ;
+
+        
+    
+    
+            marker_8dfab225abaf509d4b76a8ead938ca7c.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Blue Intact Female Pit Bull<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32c03de52830615bbffa3dfcfc7f687e = L.marker(
+                [30.25177, -97.59545],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_01ad115975d88f9df20ffe73199783b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_32c03de52830615bbffa3dfcfc7f687e.setIcon(icon_01ad115975d88f9df20ffe73199783b0);
+        
+    
+        var popup_55a1f7039fa3b1090023219436ee47ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c041d4cfa9ede121e9b79a75fc7af86 = $(`<div id="html_8c041d4cfa9ede121e9b79a75fc7af86" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870414&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_55a1f7039fa3b1090023219436ee47ab.setContent(html_8c041d4cfa9ede121e9b79a75fc7af86);
+        
+
+        marker_32c03de52830615bbffa3dfcfc7f687e.bindPopup(popup_55a1f7039fa3b1090023219436ee47ab)
+        ;
+
+        
+    
+    
+            marker_32c03de52830615bbffa3dfcfc7f687e.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Black/Brown Neutered Male Manchester Terrier<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d94135d4b87cfad78309b85d6d7b4eec = L.marker(
+                [30.25536, -97.72774],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_b1e384e813496ca2b83afaa6ff67dd22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d94135d4b87cfad78309b85d6d7b4eec.setIcon(icon_b1e384e813496ca2b83afaa6ff67dd22);
+        
+    
+        var popup_bc286b6fa1aa31d5276de4b92481745a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dddf2275ed0f5ffb497e5e4f014c44e5 = $(`<div id="html_dddf2275ed0f5ffb497e5e4f014c44e5" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870473&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_bc286b6fa1aa31d5276de4b92481745a.setContent(html_dddf2275ed0f5ffb497e5e4f014c44e5);
+        
+
+        marker_d94135d4b87cfad78309b85d6d7b4eec.bindPopup(popup_bc286b6fa1aa31d5276de4b92481745a)
+        ;
+
+        
+    
+    
+            marker_d94135d4b87cfad78309b85d6d7b4eec.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Brown Tabby Intact Male Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d215194989f3c55fa031cc0c1e45a50 = L.marker(
+                [30.4122, -97.60606],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_a478c5c7112e84a2fd54cd6353050643 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0d215194989f3c55fa031cc0c1e45a50.setIcon(icon_a478c5c7112e84a2fd54cd6353050643);
+        
+    
+        var popup_79b7a10f8f6f29cd598efdf0b558e06f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91d5e5bab114f7b6af0e12ca429eca5b = $(`<div id="html_91d5e5bab114f7b6af0e12ca429eca5b" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870614&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_79b7a10f8f6f29cd598efdf0b558e06f.setContent(html_91d5e5bab114f7b6af0e12ca429eca5b);
+        
+
+        marker_0d215194989f3c55fa031cc0c1e45a50.bindPopup(popup_79b7a10f8f6f29cd598efdf0b558e06f)
+        ;
+
+        
+    
+    
+            marker_0d215194989f3c55fa031cc0c1e45a50.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 09, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Torbie Intact Female Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9905bc117544bf85dc5c907398f34492 = L.marker(
+                [48.10897, -105.12307],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_8ff65d14ac4da82088930a5cc05d7359 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9905bc117544bf85dc5c907398f34492.setIcon(icon_8ff65d14ac4da82088930a5cc05d7359);
+        
+    
+        var popup_0c541c9294a363be5fedb0c0a3617913 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0e48392b5e2df0e616ada068f766b6f = $(`<div id="html_e0e48392b5e2df0e616ada068f766b6f" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870388&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_0c541c9294a363be5fedb0c0a3617913.setContent(html_e0e48392b5e2df0e616ada068f766b6f);
+        
+
+        marker_9905bc117544bf85dc5c907398f34492.bindPopup(popup_0c541c9294a363be5fedb0c0a3617913)
+        ;
+
+        
+    
+    
+            marker_9905bc117544bf85dc5c907398f34492.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Black Unknown German Shepherd<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98923ed7ccdd879a12c3a74cbd1e8cc0 = L.marker(
+                [30.21795, -97.51868],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_3d64d5061307eceb95952ac2a8ff21bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_98923ed7ccdd879a12c3a74cbd1e8cc0.setIcon(icon_3d64d5061307eceb95952ac2a8ff21bc);
+        
+    
+        var popup_4ad4f0b0c099e0b5dfea9e12a2e52e10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ca6f7957969ceb58c56644f270b39c1 = $(`<div id="html_0ca6f7957969ceb58c56644f270b39c1" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870531&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_4ad4f0b0c099e0b5dfea9e12a2e52e10.setContent(html_0ca6f7957969ceb58c56644f270b39c1);
+        
+
+        marker_98923ed7ccdd879a12c3a74cbd1e8cc0.bindPopup(popup_4ad4f0b0c099e0b5dfea9e12a2e52e10)
+        ;
+
+        
+    
+    
+            marker_98923ed7ccdd879a12c3a74cbd1e8cc0.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 08, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Brown Intact Male Labrador Retriever Mix<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1cb74a831879c8a2d851bf49cc34205 = L.marker(
+                [30.22633, -97.76996],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_c860832597aad1acf909e809f2ac3b0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c1cb74a831879c8a2d851bf49cc34205.setIcon(icon_c860832597aad1acf909e809f2ac3b0c);
+        
+    
+        var popup_4b9961958efe99a7641990f55a9e3000 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00db9f823848ce83885513dc7b0b2233 = $(`<div id="html_00db9f823848ce83885513dc7b0b2233" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870666&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_4b9961958efe99a7641990f55a9e3000.setContent(html_00db9f823848ce83885513dc7b0b2233);
+        
+
+        marker_c1cb74a831879c8a2d851bf49cc34205.bindPopup(popup_4b9961958efe99a7641990f55a9e3000)
+        ;
+
+        
+    
+    
+            marker_c1cb74a831879c8a2d851bf49cc34205.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 10, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Tricolor/Black Intact Female Australian Cattle Dog<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ccfc85f0006162fde61d39d25ae8996 = L.marker(
+                [30.21461, -97.65756],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_30e0881882ef392b4e8a160087efcdd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3ccfc85f0006162fde61d39d25ae8996.setIcon(icon_30e0881882ef392b4e8a160087efcdd2);
+        
+    
+        var popup_f3e06dc04b112bab09f8c80451e451d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e17fa95f07680a5b835732f66b26bd17 = $(`<div id="html_e17fa95f07680a5b835732f66b26bd17" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870404&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_f3e06dc04b112bab09f8c80451e451d3.setContent(html_e17fa95f07680a5b835732f66b26bd17);
+        
+
+        marker_3ccfc85f0006162fde61d39d25ae8996.bindPopup(popup_f3e06dc04b112bab09f8c80451e451d3)
+        ;
+
+        
+    
+    
+            marker_3ccfc85f0006162fde61d39d25ae8996.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Brown Unknown Boxer Mix<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f21a1f5c82791d9d7b84ab92be716cb0 = L.marker(
+                [30.30871, -97.74978],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_bd5531d15c33f0db3d5c204be0946e56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f21a1f5c82791d9d7b84ab92be716cb0.setIcon(icon_bd5531d15c33f0db3d5c204be0946e56);
+        
+    
+        var popup_34a2442e636b3203079e204d174461a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d6ec14126ee16270e880215c73abe23 = $(`<div id="html_2d6ec14126ee16270e880215c73abe23" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A869878&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_34a2442e636b3203079e204d174461a1.setContent(html_2d6ec14126ee16270e880215c73abe23);
+        
+
+        marker_f21a1f5c82791d9d7b84ab92be716cb0.bindPopup(popup_34a2442e636b3203079e204d174461a1)
+        ;
+
+        
+    
+    
+            marker_f21a1f5c82791d9d7b84ab92be716cb0.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 08, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Black/White Intact Male Labrador Retriever Mix<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad226a15a72f9fe799c04b39d158f7d5 = L.marker(
+                [30.27734, -97.63128],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_66faeb7da5b1088fbe73aa2543e0a030 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ad226a15a72f9fe799c04b39d158f7d5.setIcon(icon_66faeb7da5b1088fbe73aa2543e0a030);
+        
+    
+        var popup_c90e7def640dfeca13d3df4f174dc3c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8a2ad87768951b1a98e3f855e1680b3 = $(`<div id="html_e8a2ad87768951b1a98e3f855e1680b3" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870472&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_c90e7def640dfeca13d3df4f174dc3c8.setContent(html_e8a2ad87768951b1a98e3f855e1680b3);
+        
+
+        marker_ad226a15a72f9fe799c04b39d158f7d5.bindPopup(popup_c90e7def640dfeca13d3df4f174dc3c8)
+        ;
+
+        
+    
+    
+            marker_ad226a15a72f9fe799c04b39d158f7d5.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Tan/White Intact Female Anatolian Shepherd/Great Dane<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d15f39bf0086d9e5190aaadac9901f2 = L.marker(
+                [30.25536, -97.72774],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_7eb9848da67eb628fac21ee63c3aa529 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1d15f39bf0086d9e5190aaadac9901f2.setIcon(icon_7eb9848da67eb628fac21ee63c3aa529);
+        
+    
+        var popup_f7cd6aafb388dbf8207bf025b5ca098e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62a1160c22ffa21ca2e4c324768fb5fe = $(`<div id="html_62a1160c22ffa21ca2e4c324768fb5fe" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870474&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_f7cd6aafb388dbf8207bf025b5ca098e.setContent(html_62a1160c22ffa21ca2e4c324768fb5fe);
+        
+
+        marker_1d15f39bf0086d9e5190aaadac9901f2.bindPopup(popup_f7cd6aafb388dbf8207bf025b5ca098e)
+        ;
+
+        
+    
+    
+            marker_1d15f39bf0086d9e5190aaadac9901f2.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Brown Tabby Intact Male Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11e1569561bf2cf8ff52b3ab0e151498 = L.marker(
+                [30.22764, -97.70176],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_fc93f942729a7ebd06e08ecd00575e48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_11e1569561bf2cf8ff52b3ab0e151498.setIcon(icon_fc93f942729a7ebd06e08ecd00575e48);
+        
+    
+        var popup_1fc9c6ac3a3b5eeb555dc9a6253bdfb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7fef8ee594d3e0ad91f0f39f99123322 = $(`<div id="html_7fef8ee594d3e0ad91f0f39f99123322" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870507&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_1fc9c6ac3a3b5eeb555dc9a6253bdfb6.setContent(html_7fef8ee594d3e0ad91f0f39f99123322);
+        
+
+        marker_11e1569561bf2cf8ff52b3ab0e151498.bindPopup(popup_1fc9c6ac3a3b5eeb555dc9a6253bdfb6)
+        ;
+
+        
+    
+    
+            marker_11e1569561bf2cf8ff52b3ab0e151498.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Gray Tabby Unknown Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ea72de97f95bd3bb4dddf21b5e5cfaf = L.marker(
+                [30.4122, -97.60606],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_bde8200bb3839066896367ffe6ea7b69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0ea72de97f95bd3bb4dddf21b5e5cfaf.setIcon(icon_bde8200bb3839066896367ffe6ea7b69);
+        
+    
+        var popup_29d48ff2b96dbfeed7625fed9d9aae8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31e6307828345c16a492a24ac3bca600 = $(`<div id="html_31e6307828345c16a492a24ac3bca600" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870613&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_29d48ff2b96dbfeed7625fed9d9aae8d.setContent(html_31e6307828345c16a492a24ac3bca600);
+        
+
+        marker_0ea72de97f95bd3bb4dddf21b5e5cfaf.bindPopup(popup_29d48ff2b96dbfeed7625fed9d9aae8d)
+        ;
+
+        
+    
+    
+            marker_0ea72de97f95bd3bb4dddf21b5e5cfaf.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 09, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Orange Tabby/White Intact Male Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0629677ef46d03b911f44327ade7dee3 = L.marker(
+                [30.21461, -97.65756],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_da6951447e47f651d489028261750abf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0629677ef46d03b911f44327ade7dee3.setIcon(icon_da6951447e47f651d489028261750abf);
+        
+    
+        var popup_f1336f971c936d34187f52e61bbbbd8f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e12e12a01076acf3fb317bfd19f22e05 = $(`<div id="html_e12e12a01076acf3fb317bfd19f22e05" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870409&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_f1336f971c936d34187f52e61bbbbd8f.setContent(html_e12e12a01076acf3fb317bfd19f22e05);
+        
+
+        marker_0629677ef46d03b911f44327ade7dee3.bindPopup(popup_f1336f971c936d34187f52e61bbbbd8f)
+        ;
+
+        
+    
+    
+            marker_0629677ef46d03b911f44327ade7dee3.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Brown Unknown Boxer Mix<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1477e215e90b4d9ca35aed185d0a0cc3 = L.marker(
+                [30.2332, -97.69889],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_9313f658873767fb67bc211b7a439534 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1477e215e90b4d9ca35aed185d0a0cc3.setIcon(icon_9313f658873767fb67bc211b7a439534);
+        
+    
+        var popup_a67e44892424bba9a7a2dbd0ebfc0427 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9baaf78a9f99c909dd66b10a75841b61 = $(`<div id="html_9baaf78a9f99c909dd66b10a75841b61" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870417&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_a67e44892424bba9a7a2dbd0ebfc0427.setContent(html_9baaf78a9f99c909dd66b10a75841b61);
+        
+
+        marker_1477e215e90b4d9ca35aed185d0a0cc3.bindPopup(popup_a67e44892424bba9a7a2dbd0ebfc0427)
+        ;
+
+        
+    
+    
+            marker_1477e215e90b4d9ca35aed185d0a0cc3.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>White/Brown Brindle Intact Male Pit Bull<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30e6044072eca0f8462afc4f84960b8b = L.marker(
+                [30.26718, -97.69851],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_d10b63bd5b8f9d12495968528e20d622 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_30e6044072eca0f8462afc4f84960b8b.setIcon(icon_d10b63bd5b8f9d12495968528e20d622);
+        
+    
+        var popup_efc73f94330b9f174d543febc14e47c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a01e64118597378a6947d70e6c72489 = $(`<div id="html_4a01e64118597378a6947d70e6c72489" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870505&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_efc73f94330b9f174d543febc14e47c4.setContent(html_4a01e64118597378a6947d70e6c72489);
+        
+
+        marker_30e6044072eca0f8462afc4f84960b8b.bindPopup(popup_efc73f94330b9f174d543febc14e47c4)
+        ;
+
+        
+    
+    
+            marker_30e6044072eca0f8462afc4f84960b8b.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Orange Tabby/White Intact Male Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_438107492617be7f66aebbb65bb09aab = L.marker(
+                [30.26571, -97.73346],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_1450f2d435fd69925ab5936ea3a447ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_438107492617be7f66aebbb65bb09aab.setIcon(icon_1450f2d435fd69925ab5936ea3a447ee);
+        
+    
+        var popup_07fd9d95b06937c35dff80f3fe6b0391 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf912a02e2e6e1bf547224bf23b77406 = $(`<div id="html_cf912a02e2e6e1bf547224bf23b77406" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870439&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_07fd9d95b06937c35dff80f3fe6b0391.setContent(html_cf912a02e2e6e1bf547224bf23b77406);
+        
+
+        marker_438107492617be7f66aebbb65bb09aab.bindPopup(popup_07fd9d95b06937c35dff80f3fe6b0391)
+        ;
+
+        
+    
+    
+            marker_438107492617be7f66aebbb65bb09aab.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Tortie/White Intact Female Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e4153dce704d679c2df71e6cc212d0f = L.marker(
+                [30.21461, -97.65756],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_2d534b69c7fadf78c42b2bc0669d7f15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3e4153dce704d679c2df71e6cc212d0f.setIcon(icon_2d534b69c7fadf78c42b2bc0669d7f15);
+        
+    
+        var popup_f19c76eabf915330e5a328ea82b8c9b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd61abf3bcb40662eccd8b44564d05ef = $(`<div id="html_bd61abf3bcb40662eccd8b44564d05ef" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870403&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_f19c76eabf915330e5a328ea82b8c9b5.setContent(html_bd61abf3bcb40662eccd8b44564d05ef);
+        
+
+        marker_3e4153dce704d679c2df71e6cc212d0f.bindPopup(popup_f19c76eabf915330e5a328ea82b8c9b5)
+        ;
+
+        
+    
+    
+            marker_3e4153dce704d679c2df71e6cc212d0f.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Brown Unknown Boxer Mix<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_935098f2e321d544154236a8fa5bd972 = L.marker(
+                [30.21795, -97.51868],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_bd5682479c3749c93b1c090c9efa9a3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_935098f2e321d544154236a8fa5bd972.setIcon(icon_bd5682479c3749c93b1c090c9efa9a3a);
+        
+    
+        var popup_19212c455e881f4ffff4777759599d68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6404786a0f13e714337b76d0fc7eacf0 = $(`<div id="html_6404786a0f13e714337b76d0fc7eacf0" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870532&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_19212c455e881f4ffff4777759599d68.setContent(html_6404786a0f13e714337b76d0fc7eacf0);
+        
+
+        marker_935098f2e321d544154236a8fa5bd972.bindPopup(popup_19212c455e881f4ffff4777759599d68)
+        ;
+
+        
+    
+    
+            marker_935098f2e321d544154236a8fa5bd972.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 08, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>White Intact Male Labrador Retriever<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff6d04eb439b632be883daa75ce4ab12 = L.marker(
+                [30.41376, -97.65112],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_b6e0e57501c3f1c42b9bc888df249d1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ff6d04eb439b632be883daa75ce4ab12.setIcon(icon_b6e0e57501c3f1c42b9bc888df249d1d);
+        
+    
+        var popup_a81c00b166b9a60b45f002da939cc336 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62d92bad62a6d4ac1f7199cbb73de1a5 = $(`<div id="html_62d92bad62a6d4ac1f7199cbb73de1a5" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870511&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_a81c00b166b9a60b45f002da939cc336.setContent(html_62d92bad62a6d4ac1f7199cbb73de1a5);
+        
+
+        marker_ff6d04eb439b632be883daa75ce4ab12.bindPopup(popup_a81c00b166b9a60b45f002da939cc336)
+        ;
+
+        
+    
+    
+            marker_ff6d04eb439b632be883daa75ce4ab12.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Brown Tabby/White Intact Female Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c6d4e831340eb1fb7ecf5b6f227c318 = L.marker(
+                [30.32213, -97.67924],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_9f429e4f387944d5bbf1bcfe75e37a8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3c6d4e831340eb1fb7ecf5b6f227c318.setIcon(icon_9f429e4f387944d5bbf1bcfe75e37a8a);
+        
+    
+        var popup_f21da0c3805ec5d88795b72555cf63a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4974d0e96351c8c71ee6cb6a093d4ba5 = $(`<div id="html_4974d0e96351c8c71ee6cb6a093d4ba5" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870731&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_f21da0c3805ec5d88795b72555cf63a6.setContent(html_4974d0e96351c8c71ee6cb6a093d4ba5);
+        
+
+        marker_3c6d4e831340eb1fb7ecf5b6f227c318.bindPopup(popup_f21da0c3805ec5d88795b72555cf63a6)
+        ;
+
+        
+    
+    
+            marker_3c6d4e831340eb1fb7ecf5b6f227c318.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 12, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Tan/White Intact Male Pit Bull<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd8df16f7ca4adc12bb2fa1608ebd282 = L.marker(
+                [30.2143, -97.63677],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_031e6dffbdb36be5f2fecce913d0fbfd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cd8df16f7ca4adc12bb2fa1608ebd282.setIcon(icon_031e6dffbdb36be5f2fecce913d0fbfd);
+        
+    
+        var popup_7ec23207a867ac33be517ae700048182 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_202911debf3a50e43b045e142b953a6e = $(`<div id="html_202911debf3a50e43b045e142b953a6e" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870684&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_7ec23207a867ac33be517ae700048182.setContent(html_202911debf3a50e43b045e142b953a6e);
+        
+
+        marker_cd8df16f7ca4adc12bb2fa1608ebd282.bindPopup(popup_7ec23207a867ac33be517ae700048182)
+        ;
+
+        
+    
+    
+            marker_cd8df16f7ca4adc12bb2fa1608ebd282.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 10, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Black Intact Male Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8ac30828756719e2e329f2d3b34540b = L.marker(
+                [30.20428, -97.77399],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_04a31060c27f4412c596fb67a8a10281 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d8ac30828756719e2e329f2d3b34540b.setIcon(icon_04a31060c27f4412c596fb67a8a10281);
+        
+    
+        var popup_58f6de882d84f3386af262098c67e46b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d94c2b4eadd08eed20f5289512aaa26 = $(`<div id="html_0d94c2b4eadd08eed20f5289512aaa26" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870665&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_58f6de882d84f3386af262098c67e46b.setContent(html_0d94c2b4eadd08eed20f5289512aaa26);
+        
+
+        marker_d8ac30828756719e2e329f2d3b34540b.bindPopup(popup_58f6de882d84f3386af262098c67e46b)
+        ;
+
+        
+    
+    
+            marker_d8ac30828756719e2e329f2d3b34540b.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 10, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Blue Tabby Spayed Female Domestic Longhair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44003bb7be1083c2be348cade0d3f430 = L.marker(
+                [48.10897, -105.12307],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_8a16475388fe717ce592c161e67128e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_44003bb7be1083c2be348cade0d3f430.setIcon(icon_8a16475388fe717ce592c161e67128e4);
+        
+    
+        var popup_b641b3d1d323897b55a53a8550a8f511 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f278f850ca20f98bdf12c26bf3ddbbd0 = $(`<div id="html_f278f850ca20f98bdf12c26bf3ddbbd0" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870386&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_b641b3d1d323897b55a53a8550a8f511.setContent(html_f278f850ca20f98bdf12c26bf3ddbbd0);
+        
+
+        marker_44003bb7be1083c2be348cade0d3f430.bindPopup(popup_b641b3d1d323897b55a53a8550a8f511)
+        ;
+
+        
+    
+    
+            marker_44003bb7be1083c2be348cade0d3f430.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Black Unknown German Shepherd<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e32a4cb70d2e0e958a0e754d5fdfa3a = L.marker(
+                [30.35192, -97.74744],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_1896d5e9dfc3aa9ac0a5c577c702fbd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2e32a4cb70d2e0e958a0e754d5fdfa3a.setIcon(icon_1896d5e9dfc3aa9ac0a5c577c702fbd9);
+        
+    
+        var popup_1d793e7fb14ae286a2bfb3115c6fb6c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_133545a73e15b1674b30e6067e836ced = $(`<div id="html_133545a73e15b1674b30e6067e836ced" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870479&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_1d793e7fb14ae286a2bfb3115c6fb6c2.setContent(html_133545a73e15b1674b30e6067e836ced);
+        
+
+        marker_2e32a4cb70d2e0e958a0e754d5fdfa3a.bindPopup(popup_1d793e7fb14ae286a2bfb3115c6fb6c2)
+        ;
+
+        
+    
+    
+            marker_2e32a4cb70d2e0e958a0e754d5fdfa3a.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Red/White Intact Male Catahoula/Labrador Retriever<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca0816cf6e46507f2ab13d3abb88171c = L.marker(
+                [30.4122, -97.60606],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_fe3b3dfa28fd594c6bc92bbd38c4ce75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ca0816cf6e46507f2ab13d3abb88171c.setIcon(icon_fe3b3dfa28fd594c6bc92bbd38c4ce75);
+        
+    
+        var popup_d2994b37b58f6f311d39554174d99ba8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5af0759590dde339edf64e92bcbb981d = $(`<div id="html_5af0759590dde339edf64e92bcbb981d" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870616&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_d2994b37b58f6f311d39554174d99ba8.setContent(html_5af0759590dde339edf64e92bcbb981d);
+        
+
+        marker_ca0816cf6e46507f2ab13d3abb88171c.bindPopup(popup_d2994b37b58f6f311d39554174d99ba8)
+        ;
+
+        
+    
+    
+            marker_ca0816cf6e46507f2ab13d3abb88171c.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 09, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Orange Tabby/White Intact Male Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_abcb1d85152d58dce3acf20a05b540dc = L.marker(
+                [30.30871, -97.74978],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_46eedda57c0bc5f503c54d225340efaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_abcb1d85152d58dce3acf20a05b540dc.setIcon(icon_46eedda57c0bc5f503c54d225340efaf);
+        
+    
+        var popup_9073a86ec643dbef880ef8a671909b9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d2abc474e3352d368d587ced145bdf4 = $(`<div id="html_0d2abc474e3352d368d587ced145bdf4" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A869880&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_9073a86ec643dbef880ef8a671909b9f.setContent(html_0d2abc474e3352d368d587ced145bdf4);
+        
+
+        marker_abcb1d85152d58dce3acf20a05b540dc.bindPopup(popup_9073a86ec643dbef880ef8a671909b9f)
+        ;
+
+        
+    
+    
+            marker_abcb1d85152d58dce3acf20a05b540dc.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 08, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Black/White Intact Female Labrador Retriever Mix<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ada964e905149bf2b7e199db6868af73 = L.marker(
+                [30.25146, -97.69092],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_2e5799c3b29d40d1f84601541b02ac04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ada964e905149bf2b7e199db6868af73.setIcon(icon_2e5799c3b29d40d1f84601541b02ac04);
+        
+    
+        var popup_d9b929fb51acf32a21ed2f6dcbe6891f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35c5ca1480838847cc0ab8bebdb4ca17 = $(`<div id="html_35c5ca1480838847cc0ab8bebdb4ca17" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870680&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_d9b929fb51acf32a21ed2f6dcbe6891f.setContent(html_35c5ca1480838847cc0ab8bebdb4ca17);
+        
+
+        marker_ada964e905149bf2b7e199db6868af73.bindPopup(popup_d9b929fb51acf32a21ed2f6dcbe6891f)
+        ;
+
+        
+    
+    
+            marker_ada964e905149bf2b7e199db6868af73.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 10, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Lynx Point Intact Male Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d97967184a172c3f7739966a7126764 = L.marker(
+                [30.25536, -97.72774],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_75c975b77bdc32c8d70fef84e8bec2d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9d97967184a172c3f7739966a7126764.setIcon(icon_75c975b77bdc32c8d70fef84e8bec2d0);
+        
+    
+        var popup_ae52ae8679d92242e8c551c3277d1aa7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa95eaef0889a56d8b7913db147cadca = $(`<div id="html_fa95eaef0889a56d8b7913db147cadca" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870475&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_ae52ae8679d92242e8c551c3277d1aa7.setContent(html_fa95eaef0889a56d8b7913db147cadca);
+        
+
+        marker_9d97967184a172c3f7739966a7126764.bindPopup(popup_ae52ae8679d92242e8c551c3277d1aa7)
+        ;
+
+        
+    
+    
+            marker_9d97967184a172c3f7739966a7126764.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Black Intact Male Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30c8bc4f9afc26f922ad666def65f516 = L.marker(
+                [30.41376, -97.65112],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_e001784dbac774a2e11444404d4c43f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_30c8bc4f9afc26f922ad666def65f516.setIcon(icon_e001784dbac774a2e11444404d4c43f1);
+        
+    
+        var popup_b3d585e8ca9802b28f60e386089e4b7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28d998e3c91af149a4b755aa3d013336 = $(`<div id="html_28d998e3c91af149a4b755aa3d013336" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870510&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_b3d585e8ca9802b28f60e386089e4b7c.setContent(html_28d998e3c91af149a4b755aa3d013336);
+        
+
+        marker_30c8bc4f9afc26f922ad666def65f516.bindPopup(popup_b3d585e8ca9802b28f60e386089e4b7c)
+        ;
+
+        
+    
+    
+            marker_30c8bc4f9afc26f922ad666def65f516.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>White/Silver Tabby Intact Female Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c8acc4bc6e136cd229173fbfa1d7432 = L.marker(
+                [30.29144, -97.6355],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_a45d7928bd28f43425141f0f59d06525 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7c8acc4bc6e136cd229173fbfa1d7432.setIcon(icon_a45d7928bd28f43425141f0f59d06525);
+        
+    
+        var popup_8c70aebdb68b500844aba79848f5815d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d16ce9e9f7fbeb0d7f22294d0ef952fa = $(`<div id="html_d16ce9e9f7fbeb0d7f22294d0ef952fa" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870612&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_8c70aebdb68b500844aba79848f5815d.setContent(html_d16ce9e9f7fbeb0d7f22294d0ef952fa);
+        
+
+        marker_7c8acc4bc6e136cd229173fbfa1d7432.bindPopup(popup_8c70aebdb68b500844aba79848f5815d)
+        ;
+
+        
+    
+    
+            marker_7c8acc4bc6e136cd229173fbfa1d7432.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 09, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>White/Brown Tabby Intact Male Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af8a3d1a939dcf24796c13573ec6445b = L.marker(
+                [30.21461, -97.65756],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_ad0d6e322aff06a95038c6a6cfe463d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_af8a3d1a939dcf24796c13573ec6445b.setIcon(icon_ad0d6e322aff06a95038c6a6cfe463d8);
+        
+    
+        var popup_158d3752ae068bdb725e25b6ee706bfa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7de50e800b228203c407614a25d69591 = $(`<div id="html_7de50e800b228203c407614a25d69591" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870410&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_158d3752ae068bdb725e25b6ee706bfa.setContent(html_7de50e800b228203c407614a25d69591);
+        
+
+        marker_af8a3d1a939dcf24796c13573ec6445b.bindPopup(popup_158d3752ae068bdb725e25b6ee706bfa)
+        ;
+
+        
+    
+    
+            marker_af8a3d1a939dcf24796c13573ec6445b.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Brown Unknown Boxer Mix<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef1919ee9f45083b2cf93bccd761630c = L.marker(
+                [30.41376, -97.65112],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_911c6ee6a22f3cf927e218dce0f1da53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ef1919ee9f45083b2cf93bccd761630c.setIcon(icon_911c6ee6a22f3cf927e218dce0f1da53);
+        
+    
+        var popup_ce7ec7b1205d08adb82875bd7ca927be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6dfb757febde3d92e003a245b9fa36a0 = $(`<div id="html_6dfb757febde3d92e003a245b9fa36a0" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870512&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_ce7ec7b1205d08adb82875bd7ca927be.setContent(html_6dfb757febde3d92e003a245b9fa36a0);
+        
+
+        marker_ef1919ee9f45083b2cf93bccd761630c.bindPopup(popup_ce7ec7b1205d08adb82875bd7ca927be)
+        ;
+
+        
+    
+    
+            marker_ef1919ee9f45083b2cf93bccd761630c.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Black Tabby/White Intact Male Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c639cb156a6abe3a71cc79f0bb8253db = L.marker(
+                [30.21747, -97.49056],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_0944f5c69c61d66251bdf0f7df66dc54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c639cb156a6abe3a71cc79f0bb8253db.setIcon(icon_0944f5c69c61d66251bdf0f7df66dc54);
+        
+    
+        var popup_075cede7979baad395a568b3f7cd0622 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c590b2663cb70f07f28a19e8a733f3b2 = $(`<div id="html_c590b2663cb70f07f28a19e8a733f3b2" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870617&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_075cede7979baad395a568b3f7cd0622.setContent(html_c590b2663cb70f07f28a19e8a733f3b2);
+        
+
+        marker_c639cb156a6abe3a71cc79f0bb8253db.bindPopup(popup_075cede7979baad395a568b3f7cd0622)
+        ;
+
+        
+    
+    
+            marker_c639cb156a6abe3a71cc79f0bb8253db.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 09, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>White/Black Intact Male Chihuahua Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed3d278573d94fc128d669f0228a2ea3 = L.marker(
+                [30.21461, -97.65756],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_ec23f6992f0f06cf4836d25e95ced0ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ed3d278573d94fc128d669f0228a2ea3.setIcon(icon_ec23f6992f0f06cf4836d25e95ced0ff);
+        
+    
+        var popup_e012357d8304c1bf437db9281e9acdff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23a5f9842a31042313b4ccea7fb9c10a = $(`<div id="html_23a5f9842a31042313b4ccea7fb9c10a" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870407&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_e012357d8304c1bf437db9281e9acdff.setContent(html_23a5f9842a31042313b4ccea7fb9c10a);
+        
+
+        marker_ed3d278573d94fc128d669f0228a2ea3.bindPopup(popup_e012357d8304c1bf437db9281e9acdff)
+        ;
+
+        
+    
+    
+            marker_ed3d278573d94fc128d669f0228a2ea3.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Brown Unknown Boxer Mix<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5000f24554dd73fe1ef1e8aab4d749ed = L.marker(
+                [30.27734, -97.63128],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_4df4487e7e6376d9b252b83df2981866 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5000f24554dd73fe1ef1e8aab4d749ed.setIcon(icon_4df4487e7e6376d9b252b83df2981866);
+        
+    
+        var popup_2c3853a19207b4e1589abc795f23e411 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2ce598f189100d5b31b06f073b2656c = $(`<div id="html_e2ce598f189100d5b31b06f073b2656c" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870471&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_2c3853a19207b4e1589abc795f23e411.setContent(html_e2ce598f189100d5b31b06f073b2656c);
+        
+
+        marker_5000f24554dd73fe1ef1e8aab4d749ed.bindPopup(popup_2c3853a19207b4e1589abc795f23e411)
+        ;
+
+        
+    
+    
+            marker_5000f24554dd73fe1ef1e8aab4d749ed.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Tan/White Intact Female Anatolian Shepherd/Great Dane<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33163ea2d9c2c4b0b095dfa1f1b411cc = L.marker(
+                [48.10897, -105.12307],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_4ab37c9220a6317ec8c2f0d4a2022d82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_33163ea2d9c2c4b0b095dfa1f1b411cc.setIcon(icon_4ab37c9220a6317ec8c2f0d4a2022d82);
+        
+    
+        var popup_29dd97697ba2a94f22b9391b43fdcca4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_503d05244d66163116be57558e0839f1 = $(`<div id="html_503d05244d66163116be57558e0839f1" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870390&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_29dd97697ba2a94f22b9391b43fdcca4.setContent(html_503d05244d66163116be57558e0839f1);
+        
+
+        marker_33163ea2d9c2c4b0b095dfa1f1b411cc.bindPopup(popup_29dd97697ba2a94f22b9391b43fdcca4)
+        ;
+
+        
+    
+    
+            marker_33163ea2d9c2c4b0b095dfa1f1b411cc.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Brown/Black Unknown German Shepherd<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13ab89467fea7d8eeb2094e0efaec8dc = L.marker(
+                [30.19809, -97.74645],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_8956e95384d0d8c46069eea45a9ccceb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_13ab89467fea7d8eeb2094e0efaec8dc.setIcon(icon_8956e95384d0d8c46069eea45a9ccceb);
+        
+    
+        var popup_74281d214ea6d8947fdc3d75f18d5fd2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2676f2bf8c5ba460039970073ae4424 = $(`<div id="html_e2676f2bf8c5ba460039970073ae4424" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870640&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_74281d214ea6d8947fdc3d75f18d5fd2.setContent(html_e2676f2bf8c5ba460039970073ae4424);
+        
+
+        marker_13ab89467fea7d8eeb2094e0efaec8dc.bindPopup(popup_74281d214ea6d8947fdc3d75f18d5fd2)
+        ;
+
+        
+    
+    
+            marker_13ab89467fea7d8eeb2094e0efaec8dc.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 09, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>White/Blue Merle Neutered Male Pit Bull Mix<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc3ec32e0cb581f9819a2ccbbf84808b = L.marker(
+                [30.26718, -97.69851],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_8ed5470f26596757e377bf752cb125c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cc3ec32e0cb581f9819a2ccbbf84808b.setIcon(icon_8ed5470f26596757e377bf752cb125c3);
+        
+    
+        var popup_62696c992bdd0cff73177e9a1316b248 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0370b52c4ac280422958313496637878 = $(`<div id="html_0370b52c4ac280422958313496637878" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870504&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_62696c992bdd0cff73177e9a1316b248.setContent(html_0370b52c4ac280422958313496637878);
+        
+
+        marker_cc3ec32e0cb581f9819a2ccbbf84808b.bindPopup(popup_62696c992bdd0cff73177e9a1316b248)
+        ;
+
+        
+    
+    
+            marker_cc3ec32e0cb581f9819a2ccbbf84808b.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Orange Tabby/White Intact Female Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e909593ca3af03dca13d514b3283cad = L.marker(
+                [30.26571, -97.73346],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_8025ee997fa733be954af822d843c687 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9e909593ca3af03dca13d514b3283cad.setIcon(icon_8025ee997fa733be954af822d843c687);
+        
+    
+        var popup_8062c2c22605e9402bb02f51558f49bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab76893d6d3902f185d423ab21f9b038 = $(`<div id="html_ab76893d6d3902f185d423ab21f9b038" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870438&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_8062c2c22605e9402bb02f51558f49bf.setContent(html_ab76893d6d3902f185d423ab21f9b038);
+        
+
+        marker_9e909593ca3af03dca13d514b3283cad.bindPopup(popup_8062c2c22605e9402bb02f51558f49bf)
+        ;
+
+        
+    
+    
+            marker_9e909593ca3af03dca13d514b3283cad.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Black/White Unknown Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02359fe2c4d166948e79beef6553c0af = L.marker(
+                [30.13466, -97.67761],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_c364852d4dbdc562c1226cafb3a2c1b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_02359fe2c4d166948e79beef6553c0af.setIcon(icon_c364852d4dbdc562c1226cafb3a2c1b8);
+        
+    
+        var popup_72cf3bad565cf983679a1162497c8980 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c6ab9c445181f223ffa515819efda5e = $(`<div id="html_9c6ab9c445181f223ffa515819efda5e" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870418&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_72cf3bad565cf983679a1162497c8980.setContent(html_9c6ab9c445181f223ffa515819efda5e);
+        
+
+        marker_02359fe2c4d166948e79beef6553c0af.bindPopup(popup_72cf3bad565cf983679a1162497c8980)
+        ;
+
+        
+    
+    
+            marker_02359fe2c4d166948e79beef6553c0af.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Blue Tabby/White Intact Male Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_962217c8e4625ebf657e4d383770655b = L.marker(
+                [48.10897, -105.12307],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_60f0bf3457248cea6b299954c0042fb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_962217c8e4625ebf657e4d383770655b.setIcon(icon_60f0bf3457248cea6b299954c0042fb0);
+        
+    
+        var popup_77186ce1878720d9838dbab88625b0f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f90113ff4437bd3438c3804c8a265838 = $(`<div id="html_f90113ff4437bd3438c3804c8a265838" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870387&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_77186ce1878720d9838dbab88625b0f5.setContent(html_f90113ff4437bd3438c3804c8a265838);
+        
+
+        marker_962217c8e4625ebf657e4d383770655b.bindPopup(popup_77186ce1878720d9838dbab88625b0f5)
+        ;
+
+        
+    
+    
+            marker_962217c8e4625ebf657e4d383770655b.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Black Unknown German Shepherd<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c05e03e6686df329b32616ae160cc3a = L.marker(
+                [30.31657, -97.61163],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_badc5975261ab52e084082f8ef3b480a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4c05e03e6686df329b32616ae160cc3a.setIcon(icon_badc5975261ab52e084082f8ef3b480a);
+        
+    
+        var popup_1cafd79650c62e7cd216be08058458ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b716e226e719352936630c86120f295f = $(`<div id="html_b716e226e719352936630c86120f295f" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870663&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_1cafd79650c62e7cd216be08058458ba.setContent(html_b716e226e719352936630c86120f295f);
+        
+
+        marker_4c05e03e6686df329b32616ae160cc3a.bindPopup(popup_1cafd79650c62e7cd216be08058458ba)
+        ;
+
+        
+    
+    
+            marker_4c05e03e6686df329b32616ae160cc3a.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 10, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Brown Intact Female Chihuahua Shorthair Mix<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccd28da40378c87450ff09e179b577ee = L.marker(
+                [30.31068, -97.68798],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_51bad66149ed76404c7dcf5c116cd2e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ccd28da40378c87450ff09e179b577ee.setIcon(icon_51bad66149ed76404c7dcf5c116cd2e8);
+        
+    
+        var popup_3bac834b4ed9ccf5ce71110c99e6492a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fe93e8e65d21eb94b2e0f5ea3267aa6 = $(`<div id="html_0fe93e8e65d21eb94b2e0f5ea3267aa6" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870552&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_3bac834b4ed9ccf5ce71110c99e6492a.setContent(html_0fe93e8e65d21eb94b2e0f5ea3267aa6);
+        
+
+        marker_ccd28da40378c87450ff09e179b577ee.bindPopup(popup_3bac834b4ed9ccf5ce71110c99e6492a)
+        ;
+
+        
+    
+    
+            marker_ccd28da40378c87450ff09e179b577ee.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 08, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Black/Tan Intact Male Chihuahua Shorthair Mix<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3209f07ffb383df91504579a431f9a4c = L.marker(
+                [30.25536, -97.72774],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_ee85914f1df905de9450d0473a61fe22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3209f07ffb383df91504579a431f9a4c.setIcon(icon_ee85914f1df905de9450d0473a61fe22);
+        
+    
+        var popup_b1ea5d1e585d053752afb9572ef26585 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bae8daac8cbcfdcf7454203979735b07 = $(`<div id="html_bae8daac8cbcfdcf7454203979735b07" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870476&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_b1ea5d1e585d053752afb9572ef26585.setContent(html_bae8daac8cbcfdcf7454203979735b07);
+        
+
+        marker_3209f07ffb383df91504579a431f9a4c.bindPopup(popup_b1ea5d1e585d053752afb9572ef26585)
+        ;
+
+        
+    
+    
+            marker_3209f07ffb383df91504579a431f9a4c.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Black Intact Male Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_091d3affa72ad73956f5612b43d2d2f3 = L.marker(
+                [30.28479, -97.71949],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_5f3602f208352bdd69deb81654bb279f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_091d3affa72ad73956f5612b43d2d2f3.setIcon(icon_5f3602f208352bdd69deb81654bb279f);
+        
+    
+        var popup_ddce607488b2ec588187f22e47f6d64d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8d48750ba426838ee99f35a3834f7ad = $(`<div id="html_c8d48750ba426838ee99f35a3834f7ad" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870470&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_ddce607488b2ec588187f22e47f6d64d.setContent(html_c8d48750ba426838ee99f35a3834f7ad);
+        
+
+        marker_091d3affa72ad73956f5612b43d2d2f3.bindPopup(popup_ddce607488b2ec588187f22e47f6d64d)
+        ;
+
+        
+    
+    
+            marker_091d3affa72ad73956f5612b43d2d2f3.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>White/Gray Intact Female Pit Bull<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57ab8b58aadc26b1dfceb17cb30be7bc = L.marker(
+                [30.41376, -97.65112],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_1a987a990b25f7c406eb1d04da9d4bfc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_57ab8b58aadc26b1dfceb17cb30be7bc.setIcon(icon_1a987a990b25f7c406eb1d04da9d4bfc);
+        
+    
+        var popup_fdecd83288c2b537c47e9ab1e963ef22 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f14bd544b7fba2d656bb713bb39b1eba = $(`<div id="html_f14bd544b7fba2d656bb713bb39b1eba" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870513&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_fdecd83288c2b537c47e9ab1e963ef22.setContent(html_f14bd544b7fba2d656bb713bb39b1eba);
+        
+
+        marker_57ab8b58aadc26b1dfceb17cb30be7bc.bindPopup(popup_fdecd83288c2b537c47e9ab1e963ef22)
+        ;
+
+        
+    
+    
+            marker_57ab8b58aadc26b1dfceb17cb30be7bc.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Black Tabby/White Intact Female Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c982078dd7d30f1a09a907454d856a42 = L.marker(
+                [30.21461, -97.65756],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_d505b4d6c4475898102bcbe8bd56c501 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c982078dd7d30f1a09a907454d856a42.setIcon(icon_d505b4d6c4475898102bcbe8bd56c501);
+        
+    
+        var popup_35ccceeae3538cafb8ffa2f8d27894c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ca437fe5295045f77b287c54b63ef96 = $(`<div id="html_8ca437fe5295045f77b287c54b63ef96" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870411&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_35ccceeae3538cafb8ffa2f8d27894c2.setContent(html_8ca437fe5295045f77b287c54b63ef96);
+        
+
+        marker_c982078dd7d30f1a09a907454d856a42.bindPopup(popup_35ccceeae3538cafb8ffa2f8d27894c2)
+        ;
+
+        
+    
+    
+            marker_c982078dd7d30f1a09a907454d856a42.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Brown Unknown Boxer Mix<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25adc7ed470289e276d6ed00c1b67e61 = L.marker(
+                [36.29648, -92.32724],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_ecbd4c0909e1a8fa2a3ec2f4ae9ae9f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_25adc7ed470289e276d6ed00c1b67e61.setIcon(icon_ecbd4c0909e1a8fa2a3ec2f4ae9ae9f6);
+        
+    
+        var popup_496c6509cdd26d8bce01fc671533c10e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b36a5b1f769b17372defcfff9f89bf1c = $(`<div id="html_b36a5b1f769b17372defcfff9f89bf1c" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870679&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_496c6509cdd26d8bce01fc671533c10e.setContent(html_b36a5b1f769b17372defcfff9f89bf1c);
+        
+
+        marker_25adc7ed470289e276d6ed00c1b67e61.bindPopup(popup_496c6509cdd26d8bce01fc671533c10e)
+        ;
+
+        
+    
+    
+            marker_25adc7ed470289e276d6ed00c1b67e61.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 10, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Brown/Tan Intact Female Doberman Pinsch<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_85721b6f38bab66841a1d733e0262130 = L.marker(
+                [30.41376, -97.65112],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_ee7c1e998dcc98ce9ace852ff4726da2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_85721b6f38bab66841a1d733e0262130.setIcon(icon_ee7c1e998dcc98ce9ace852ff4726da2);
+        
+    
+        var popup_e74c3daec0c4f82d9ad45d9af660be97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bed874d188ca8b61c302f36192bb370 = $(`<div id="html_1bed874d188ca8b61c302f36192bb370" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870509&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_e74c3daec0c4f82d9ad45d9af660be97.setContent(html_1bed874d188ca8b61c302f36192bb370);
+        
+
+        marker_85721b6f38bab66841a1d733e0262130.bindPopup(popup_e74c3daec0c4f82d9ad45d9af660be97)
+        ;
+
+        
+    
+    
+            marker_85721b6f38bab66841a1d733e0262130.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 07, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>White/Silver Tabby Intact Female Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6683002bcb9f188427e77073ca64a31 = L.marker(
+                [30.21461, -97.65756],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_1ba40b65ebd9fa77e9d1d9fe137918c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e6683002bcb9f188427e77073ca64a31.setIcon(icon_1ba40b65ebd9fa77e9d1d9fe137918c4);
+        
+    
+        var popup_08638cc3cfa1bdde4ae744d6fd1e6318 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5e9988781ba7a82a3285f882886910e = $(`<div id="html_a5e9988781ba7a82a3285f882886910e" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870406&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_08638cc3cfa1bdde4ae744d6fd1e6318.setContent(html_a5e9988781ba7a82a3285f882886910e);
+        
+
+        marker_e6683002bcb9f188427e77073ca64a31.bindPopup(popup_08638cc3cfa1bdde4ae744d6fd1e6318)
+        ;
+
+        
+    
+    
+            marker_e6683002bcb9f188427e77073ca64a31.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 06, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Brown Unknown Boxer Mix<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_535fc1dfac3a2c18b645131e16125f88 = L.marker(
+                [30.29144, -97.6355],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_9e4746baced2913cb039567acdd1bf1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_535fc1dfac3a2c18b645131e16125f88.setIcon(icon_9e4746baced2913cb039567acdd1bf1d);
+        
+    
+        var popup_d71ea0138c2b38d0afe1e075571740ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5753f387defe32616d3de8aa5d3a661 = $(`<div id="html_b5753f387defe32616d3de8aa5d3a661" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870611&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_d71ea0138c2b38d0afe1e075571740ff.setContent(html_b5753f387defe32616d3de8aa5d3a661);
+        
+
+        marker_535fc1dfac3a2c18b645131e16125f88.bindPopup(popup_d71ea0138c2b38d0afe1e075571740ff)
+        ;
+
+        
+    
+    
+            marker_535fc1dfac3a2c18b645131e16125f88.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 09, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Blue Tabby/White Intact Male Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d2e35ba7fae6c5d21182e2ff44a48bbb = L.marker(
+                [30.37806, -97.75623],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_251b9ad15cc5dcc1862745f08a48c9f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d2e35ba7fae6c5d21182e2ff44a48bbb.setIcon(icon_251b9ad15cc5dcc1862745f08a48c9f3);
+        
+    
+        var popup_a30ba3aa24d027610636514090624a23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2afa926f7560fcd37028b58be83c07bc = $(`<div id="html_2afa926f7560fcd37028b58be83c07bc" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870742&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_a30ba3aa24d027610636514090624a23.setContent(html_2afa926f7560fcd37028b58be83c07bc);
+        
+
+        marker_d2e35ba7fae6c5d21182e2ff44a48bbb.bindPopup(popup_a30ba3aa24d027610636514090624a23)
+        ;
+
+        
+    
+    
+            marker_d2e35ba7fae6c5d21182e2ff44a48bbb.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 12, 2022<br><b>Animal Type:</b> Cat<br><b>Description: </b>Black/Black Unknown Domestic Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7402b2390032dff086e32384fc61edf4 = L.marker(
+                [31.7251, -97.10971],
+                {}
+            ).addTo(map_9ab32589b2a7aeeafc45502043b7a9fe);
+        
+    
+            var icon_d8dff3cf69f92e96c80559ba63c02283 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7402b2390032dff086e32384fc61edf4.setIcon(icon_d8dff3cf69f92e96c80559ba63c02283);
+        
+    
+        var popup_4fd0687dec857060570a10240466201b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac058fec0753e5a1d925b13902b006aa = $(`<div id="html_ac058fec0753e5a1d925b13902b006aa" style="width: 100.0%; height: 100.0%;"><html><body><img src="http://petharbor.com/get_image.asp?RES=Detail&ID=A870692&LOCATION=ASTN" width="128"><br><br>Contact AAC<br><a aria-label="512-974-2000" href="tel:512-974-2000">512-974-2000</a><br></body></html></div>`)[0];
+            popup_4fd0687dec857060570a10240466201b.setContent(html_ac058fec0753e5a1d925b13902b006aa);
+        
+
+        marker_7402b2390032dff086e32384fc61edf4.bindPopup(popup_4fd0687dec857060570a10240466201b)
+        ;
+
+        
+    
+    
+            marker_7402b2390032dff086e32384fc61edf4.bindTooltip(
+                `<div>
+                     <b>Date Found:</b> December 11, 2022<br><b>Animal Type:</b> Dog<br><b>Description: </b>Chocolate/White Intact Male Chihuahua Shorthair<br><br><b>Click for Photo</b><br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

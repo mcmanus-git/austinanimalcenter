@@ -17,14 +17,7 @@ app = dash.Dash(__name__,
                 external_stylesheets=[dbc.themes.LUX,
                                       FA512,
                                       ],
-                title='AAC Insights',
                 use_pages=True,
-                meta_tags=[
-                    {
-                        "name": "viewport",
-                        "content": "width=device-width, initial-scale=1"
-                    }
-                ],
                 )
 
 
@@ -33,7 +26,7 @@ app.index_string = '''
 <html>
     <head>
         {%metas%}
-        <title>AAC Insights</title>
+        <title></title>
         {%favicon%}
         {%css%}
     </head>
