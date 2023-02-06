@@ -21,26 +21,26 @@ app = dash.Dash(__name__,
                 )
 
 
-app.index_string = '''
-<!DOCTYPE html>
-<html>
-    <head>
-        {%metas%}
-        <title></title>
-        {%favicon%}
-        {%css%}
-    </head>
-    <body>
-        {%app_entry%}
-        <footer>
-            {%config%}
-            {%scripts%}
-            {%renderer%}
-        </footer>
-        
-    </body>
-</html>
-'''
+# app.index_string = '''
+# <!DOCTYPE html>
+# <html>
+#     <head>
+#         {%metas%}
+#         <title></title>
+#         {%favicon%}
+#         {%css%}
+#     </head>
+#     <body>
+#         {%app_entry%}
+#         <footer>
+#             {%config%}
+#             {%scripts%}
+#             {%renderer%}
+#         </footer>
+#
+#     </body>
+# </html>
+# '''
 
 
 app.layout = dcc.Loading(
