@@ -6,11 +6,10 @@ from graph_helpers import *
 dash.register_page(
     __name__,
     name='AAC Insights',
-    top_nav=True,
     path='/',
     title="AAC Insights",
-    image='silvana-carlos-TPdR4J19SGQ-unsplash.jpg',
-    description="Austin Animal Center Data Exploration Web App",
+    # image='silvana-carlos-TPdR4J19SGQ-unsplash.jpg',
+    description="Austin Animal Center Data Exploration Web App.",
 )
 
 # Data
