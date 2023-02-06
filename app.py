@@ -17,7 +17,7 @@ app_description = """
 Machine Learning, Data Exploration, and
 Analytics Web Application showcasing that leveraging data supports
 Austin Animal Center's operational efficiency and increase animal
-adoption rates
+adoption rates.
 """
 app_title = "Austin Animal Center Insights"
 app_image = 'https://unsplash.com/photos/TPdR4J19SGQ'
