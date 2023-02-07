@@ -43,18 +43,33 @@ app = dash.Dash(__name__,
 # '''
 
 
-app.layout = dcc.Loading(
-    id='loading_page_content',
-    children=[
-        html.Div(
-            [
+# app.layout = dcc.Loading(
+#     id='loading_page_content',
+#     children=[
+#         html.Div(
+#             [
+#                 navbar,
+#                 dash.page_container
+#             ]
+#         )
+#     ],
+#     color='#000000',
+#     fullscreen=True
+# )
+
+
+app.layout = html.Div(
+    [
+        dcc.Loading(
+            id='loading_page_content',
+            children=[
                 navbar,
                 dash.page_container
-            ]
-        )
+            ],
+            color='#000000',
+            fullscreen=True
+        ),
     ],
-    color='#000000',
-    fullscreen=True
 )
 
 server = app.server
